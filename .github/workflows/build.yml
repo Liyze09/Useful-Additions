@@ -1,0 +1,36 @@
+name: build
+on: [pull_request, push]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check_env
+        run: env
+
+      - name: checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: setup_Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: "temurin"
+          java-version: 17
+
+      - name: run_gradle_wrapper
+        if: ${{ runner.os != 'Windows' }}
+        run: chmod +x ./gradlew
+
+      - name: build
+        run: ./gradlew clean build
+
+      - name: push_artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: create-metal-artifacts
+          path: build/libs
