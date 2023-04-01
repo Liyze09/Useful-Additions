@@ -39,6 +39,7 @@ public final class Configuration {
         try {
             Writer writer = Files.newBufferedWriter(CONFIG_FILE.toPath());
             (new GsonBuilder().setPrettyPrinting().create()).toJson(config, writer);
+            LOGGER.info("Creating the configuration file");
             writer.close();
         } catch (IOException e) {
             LOGGER.error("Failed to save configuration file.", e);
