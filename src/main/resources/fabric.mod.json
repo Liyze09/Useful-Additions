@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "useful_additions",
+  "version": "${version}",
+
+  "name": "Useful Additions",
+  "description": "",
+  "authors": [
+    "Liyze"
+  ],
+  "contact": {
+    "sources": "https://github.com/Liyze09"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/useful_additions/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.liyze.usefuladditions.UsefulAdditions"
+    ]
+  },
+  "mixins": [
+    "useful_additions.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.2",
+    "java": ">=17"
+  }
+}
