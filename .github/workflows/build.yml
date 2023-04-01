@@ -32,5 +32,5 @@ jobs:
       - name: push_artifact
         uses: actions/upload-artifact@v3
         with:
-          name: create-metal-artifacts
+          name: useful-additions-artifacts
           path: build/libs
