@@ -1,4 +1,4 @@
-package net.liyze.usefuladditions.item;
+package net.liyze.usefuladditions.registy;
 
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -7,7 +7,7 @@ import static net.liyze.usefuladditions.UsefulAdditions.CONFIG;
 import static net.liyze.usefuladditions.UsefulAdditions.ID;
 import static net.liyze.usefuladditions.item.Items.*;
 
-public class Register {
+public class ItemRegister {
     public static void registerItems() {
         if (CONFIG.isEnableMiniIngots()) {
             Registry.register(Registry.ITEM, new Identifier(ID, "mini_gold_ingot"), MINI_GOLD_INGOT);

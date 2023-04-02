@@ -5,7 +5,7 @@ import net.liyze.usefuladditions.util.Configuration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static net.liyze.usefuladditions.item.Register.registerItems;
+import static net.liyze.usefuladditions.registy.ItemRegister.registerItems;
 
 public class UsefulAdditions implements ModInitializer {
     public static final String ID = "useful_additions";
@@ -15,6 +15,7 @@ public class UsefulAdditions implements ModInitializer {
     protected void loadConfiguration() {
         CONFIG = Configuration.load();
     }
+
     public void onInitialize() {
         loadConfiguration();
         registerItems();

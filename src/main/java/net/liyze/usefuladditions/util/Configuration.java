@@ -1,3 +1,7 @@
+/*
+ * Used code from Farmer's Delight Fabric by newhoryzon
+ * with MIT License.
+ * */
 package net.liyze.usefuladditions.util;
 
 import com.google.gson.GsonBuilder;

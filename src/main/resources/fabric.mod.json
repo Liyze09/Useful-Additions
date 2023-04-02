@@ -2,7 +2,6 @@
   "schemaVersion": 1,
   "id": "useful_additions",
   "version": "${version}",
-
   "name": "Useful Additions",
   "description": "",
   "authors": [
@@ -11,10 +10,8 @@
   "contact": {
     "sources": "https://github.com/Liyze09"
   },
-
   "license": "MIT License",
   "icon": "assets/useful_additions/icon.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -24,7 +21,6 @@
   "mixins": [
     "useful_additions.mixins.json"
   ],
-
   "depends": {
     "fabricloader": ">=0.14.11",
     "fabric-api": "*",
