@@ -1,13 +1,20 @@
 package net.liyze.usefuladditions.item;
 
+import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.liyze.usefuladditions.util.CustomHoeItem;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
+import net.minecraft.util.Identifier;
+
+import static net.liyze.usefuladditions.UsefulAdditions.ID;
 
 public class Items {
+    public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(new Identifier(ID, "main"),
+            () -> new ItemStack(net.minecraft.item.Items.BUCKET));
+
     /*Mini Items*/
-    public static final Item MINI_GOLD_INGOT = new Item(new FabricItemSettings().group(ItemGroup.MISC));
+    public static final Item MINI_GOLD_INGOT = new Item(new FabricItemSettings().group(ITEM_GROUP));
     public static final Item MINI_IRON_INGOT = new Item(new FabricItemSettings().group(ItemGroup.MISC));
     public static final Item MINI_REDSTONE_BLOCK = new Item(new FabricItemSettings().group(ItemGroup.MISC));
     public static final Item MINI_LAPIS_LAZULI_BLOCK = new Item(new FabricItemSettings().group(ItemGroup.MISC));

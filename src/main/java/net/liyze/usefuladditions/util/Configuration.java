@@ -15,11 +15,12 @@ import java.nio.file.Files;
 
 import static net.liyze.usefuladditions.UsefulAdditions.LOGGER;
 
+@SuppressWarnings({"FieldCanBeLocal", "FieldMayBeFinal"})
 public final class Configuration {
     private static final File CONFIG_FILE = new File(FabricLoader.getInstance().getConfigDir().toFile(), "useful_additions.json");
-    public boolean enableMiniIngots = true;
-    public boolean enableCopperTools = true;
-    public boolean enableCopperArmors = true;
+    private boolean enableMiniIngots = true;
+    private boolean enableCopperTools = true;
+    private boolean enableCopperArmors = true;
 
     public Configuration() {
     }
