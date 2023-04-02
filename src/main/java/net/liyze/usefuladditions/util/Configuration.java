@@ -9,13 +9,13 @@ import java.io.Reader;
 import java.io.Writer;
 import java.nio.file.Files;
 
-import static net.liyze.usefuladditions.UsefulAdditions.*;
+import static net.liyze.usefuladditions.UsefulAdditions.LOGGER;
 
 public final class Configuration {
     private static final File CONFIG_FILE = new File(FabricLoader.getInstance().getConfigDir().toFile(), "useful_additions.json");
-
     public boolean enableMiniIngots = true;
     public boolean enableCopperTools = true;
+    public boolean enableCopperArmors = true;
 
     public Configuration() {
     }
@@ -50,7 +50,12 @@ public final class Configuration {
     public boolean isEnableMiniIngots() {
         return enableMiniIngots;
     }
+
     public boolean isEnableCopperTools() {
         return enableCopperTools;
+    }
+
+    public boolean isEnableCopperArmors() {
+        return enableCopperArmors;
     }
 }
