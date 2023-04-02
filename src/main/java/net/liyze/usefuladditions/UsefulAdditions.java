@@ -12,9 +12,7 @@ public class UsefulAdditions implements ModInitializer {
     public static Configuration CONFIG = new Configuration();
     public static final Logger LOGGER = LoggerFactory.getLogger("Useful Additions");
 
-    private void loadConfiguration() {
-        Configuration CONFIG = Configuration.load();
-    }
+    private void loadConfiguration() {Configuration.load();}
 
     public void onInitialize() {
         loadConfiguration();
