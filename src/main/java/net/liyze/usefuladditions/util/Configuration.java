@@ -1,4 +1,4 @@
-package net.liyze.usefuladditions;
+package net.liyze.usefuladditions.util;
 
 import com.google.gson.GsonBuilder;
 import net.fabricmc.loader.api.FabricLoader;
@@ -14,7 +14,8 @@ import static net.liyze.usefuladditions.UsefulAdditions.*;
 public final class Configuration {
     private static final File CONFIG_FILE = new File(FabricLoader.getInstance().getConfigDir().toFile(), "useful_additions.json");
 
-    public boolean enableMiniIngot = true;
+    public boolean enableMiniIngots = true;
+    public boolean enableCopperTools = true;
 
     public Configuration() {
     }
@@ -46,7 +47,10 @@ public final class Configuration {
         }
     }
 
-    public boolean isEnableMiniIngot() {
-        return enableMiniIngot;
+    public boolean isEnableMiniIngots() {
+        return enableMiniIngots;
+    }
+    public boolean isEnableCopperTools() {
+        return enableCopperTools;
     }
 }
