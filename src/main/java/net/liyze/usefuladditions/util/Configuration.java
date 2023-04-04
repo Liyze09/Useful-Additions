@@ -18,6 +18,7 @@ import static net.liyze.usefuladditions.UsefulAdditions.LOGGER;
 @SuppressWarnings({"FieldCanBeLocal", "FieldMayBeFinal"})
 public final class Configuration {
     private static final File CONFIG_FILE = new File(FabricLoader.getInstance().getConfigDir().toFile(), "useful_additions.json");
+    /*Settings*/
     private boolean enableMiniIngots = true;
     private boolean enableCopperTools = true;
     private boolean enableCopperArmors = true;
@@ -27,10 +28,12 @@ public final class Configuration {
 
     public static Configuration load() {
         Configuration configuration = new Configuration();
+        //Create config file there.
         if (!CONFIG_FILE.exists()) {
             save(configuration);
         }
         Reader reader;
+        //Try to read configure.
         try {
             reader = Files.newBufferedReader(CONFIG_FILE.toPath());
             configuration = (new GsonBuilder().setPrettyPrinting().create()).fromJson(reader, Configuration.class);
@@ -51,7 +54,7 @@ public final class Configuration {
             LOGGER.error("Failed to save configuration file.", e);
         }
     }
-
+    /*Methods to read settings*/
     public boolean isEnableMiniIngots() {
         return enableMiniIngots;
     }

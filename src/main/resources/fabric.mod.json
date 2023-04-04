@@ -16,11 +16,11 @@
   "entrypoints": {
     "main": [
       "net.liyze.usefuladditions.UsefulAdditions"
+    ],
+    "fabric-datagen": [
+      "net.liyze.usefuladditions.datagen.UsefulAdditionsDatagen"
     ]
   },
-  "mixins": [
-    "useful_additions.mixins.json"
-  ],
   "depends": {
     "fabricloader": ">=0.14.11",
     "fabric-api": "*",
