@@ -39,16 +39,16 @@ public class CopperArmorMaterial implements ArmorMaterial {
     @Override
     public String getName() {
         // Must be all lowercase
-        return "name";
+        return "copper_armors";
     }
 
     @Override
     public float getToughness() {
-        return 1.5F;
+        return 1.25F;
     }
 
     @Override
     public float getKnockbackResistance() {
-        return 0.1F;
+        return 0.05F;
     }
 }
