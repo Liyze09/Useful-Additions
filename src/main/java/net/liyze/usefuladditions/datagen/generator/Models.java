@@ -9,7 +9,7 @@ import static net.liyze.usefuladditions.item.Items.*;
 import static net.minecraft.data.client.Models.*;
 import static net.liyze.usefuladditions.UsefulAdditions.CONFIG;
 
-public class ModelGenerator extends FabricModelProvider {
+public class Models extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
     }
@@ -36,7 +36,7 @@ public class ModelGenerator extends FabricModelProvider {
             itemModelGenerator.register(COPPER_BOOTS, GENERATED);
         }
     }
-    public ModelGenerator(FabricDataGenerator generator) {
+    public Models(FabricDataGenerator generator) {
         super(generator);
     }
 }
