@@ -20,7 +20,7 @@ public class Models extends FabricModelProvider {
         if (CONFIG.isEnableMiniIngots()) {
             itemModelGenerator.register(MINI_GOLD_INGOT, GENERATED);
             itemModelGenerator.register(MINI_IRON_INGOT, GENERATED);
-            itemModelGenerator.register(MINI_LAPIS_LAZULI_BLOCK, GENERATED);
+            itemModelGenerator.register(MINI_LAPIS_BLOCK, GENERATED);
             itemModelGenerator.register(MINI_REDSTONE_BLOCK, GENERATED);
         }
         if (CONFIG.isEnableCopperTools()) {

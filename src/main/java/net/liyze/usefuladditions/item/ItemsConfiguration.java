@@ -16,7 +16,7 @@ public class ItemsConfiguration {
     public static final Item MINI_GOLD_INGOT = new Item(new FabricItemSettings().group(ITEM_GROUP));
     public static final Item MINI_IRON_INGOT = new Item(new FabricItemSettings().group(ITEM_GROUP));
     public static final Item MINI_REDSTONE_BLOCK = new Item(new FabricItemSettings().group(ITEM_GROUP));
-    public static final Item MINI_LAPIS_LAZULI_BLOCK = new Item(new FabricItemSettings().group(ITEM_GROUP));
+    public static final Item MINI_LAPIS_BLOCK = new Item(new FabricItemSettings().group(ITEM_GROUP));
     /*Copper Tools*/
     public static final ToolItem COPPER_PICKAXE = new PickaxeItem(CopperToolMaterial.INSTANCE, 0, -2.8F, new FabricItemSettings().group(ITEM_GROUP));
     public static final ToolItem COPPER_SWORD = new SwordItem(CopperToolMaterial.INSTANCE, 3, -2.6F, new FabricItemSettings().group(ITEM_GROUP));
