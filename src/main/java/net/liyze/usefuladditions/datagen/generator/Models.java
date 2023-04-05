@@ -5,9 +5,10 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 
-import static net.liyze.usefuladditions.item.Items.*;
-import static net.minecraft.data.client.Models.*;
 import static net.liyze.usefuladditions.UsefulAdditions.CONFIG;
+import static net.liyze.usefuladditions.item.Items.*;
+import static net.minecraft.data.client.Models.GENERATED;
+import static net.minecraft.data.client.Models.HANDHELD;
 
 public class Models extends FabricModelProvider {
     @Override
@@ -29,13 +30,14 @@ public class Models extends FabricModelProvider {
             itemModelGenerator.register(COPPER_SHOVEL, HANDHELD);
             itemModelGenerator.register(COPPER_SWORD, HANDHELD);
         }
-        if (CONFIG.isEnableCopperArmors()){
+        if (CONFIG.isEnableCopperArmors()) {
             itemModelGenerator.register(COPPER_HELMET, GENERATED);
             itemModelGenerator.register(COPPER_CHESTPLATE, GENERATED);
             itemModelGenerator.register(COPPER_LEGGINGS, GENERATED);
             itemModelGenerator.register(COPPER_BOOTS, GENERATED);
         }
     }
+
     public Models(FabricDataGenerator generator) {
         super(generator);
     }

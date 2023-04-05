@@ -54,6 +54,7 @@ public final class Configuration {
             LOGGER.error("Failed to save configuration file.", e);
         }
     }
+
     /*Methods to read settings*/
     public boolean isEnableMiniIngots() {
         return enableMiniIngots;

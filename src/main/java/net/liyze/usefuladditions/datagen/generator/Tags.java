@@ -1,6 +1,6 @@
 package net.liyze.usefuladditions.datagen.generator;
 
-import net.fabricmc.fabric.api.datagen.v1.*;
+import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.item.Item;
 import net.minecraft.tag.TagKey;
@@ -20,8 +20,9 @@ public class Tags extends FabricTagProvider<Item> {
     private static final TagKey<Item> HOES = TagKey.of(Registry.ITEM_KEY, new Identifier("fabric", "hoes"));
     private static final TagKey<Item> SHOVELS = TagKey.of(Registry.ITEM_KEY, new Identifier("fabric", "shovels"));
     private static final TagKey<Item> SWORDS = TagKey.of(Registry.ITEM_KEY, new Identifier("fabric", "swords"));
+
     @Override
-    protected void generateTags() {
+    public void generateTags() {
         if (CONFIG.isEnableCopperTools()) {
             getOrCreateTagBuilder(PICKAXES)
                     .add(COPPER_PICKAXE);
