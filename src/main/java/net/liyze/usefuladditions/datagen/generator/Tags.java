@@ -8,7 +8,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 import static net.liyze.usefuladditions.UsefulAdditions.CONFIG;
-import static net.liyze.usefuladditions.item.Items.*;
+import static net.liyze.usefuladditions.item.ItemsConfiguration.*;
 
 public class Tags extends FabricTagProvider<Item> {
     public Tags(FabricDataGenerator dataGenerator) {

@@ -8,7 +8,7 @@ import net.minecraft.util.Identifier;
 
 import static net.liyze.usefuladditions.UsefulAdditions.ID;
 
-public class Items {
+public class ItemsConfiguration {
     public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(new Identifier(ID, "main"),
             () -> new ItemStack(net.minecraft.item.Items.BUCKET));
 

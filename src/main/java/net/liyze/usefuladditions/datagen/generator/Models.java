@@ -6,7 +6,7 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 
 import static net.liyze.usefuladditions.UsefulAdditions.CONFIG;
-import static net.liyze.usefuladditions.item.Items.*;
+import static net.liyze.usefuladditions.item.ItemsConfiguration.*;
 import static net.minecraft.data.client.Models.GENERATED;
 import static net.minecraft.data.client.Models.HANDHELD;
 

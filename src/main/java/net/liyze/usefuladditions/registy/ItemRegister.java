@@ -5,7 +5,7 @@ import net.minecraft.util.registry.Registry;
 
 import static net.liyze.usefuladditions.UsefulAdditions.CONFIG;
 import static net.liyze.usefuladditions.UsefulAdditions.ID;
-import static net.liyze.usefuladditions.item.Items.*;
+import static net.liyze.usefuladditions.item.ItemsConfiguration.*;
 
 public class ItemRegister {
     public static void registerItems() {
