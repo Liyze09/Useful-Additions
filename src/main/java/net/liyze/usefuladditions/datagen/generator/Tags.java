@@ -7,6 +7,7 @@ import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import static net.liyze.usefuladditions.UsefulAdditions.CONFIG;
 import static net.liyze.usefuladditions.item.Items.*;
 
 public class Tags extends FabricTagProvider<Item> {
@@ -21,16 +22,18 @@ public class Tags extends FabricTagProvider<Item> {
     private static final TagKey<Item> SWORDS = TagKey.of(Registry.ITEM_KEY, new Identifier("fabric", "swords"));
     @Override
     protected void generateTags() {
-        getOrCreateTagBuilder(PICKAXES)
-                .add(COPPER_PICKAXE);
-        getOrCreateTagBuilder(AXES)
-                .add(COPPER_AXE);
-        getOrCreateTagBuilder(SWORDS)
-                .add(COPPER_SWORD);
-        getOrCreateTagBuilder(HOES)
-                .add(COPPER_HOE);
-        getOrCreateTagBuilder(SHOVELS)
-                .add(COPPER_SHOVEL);
+        if (CONFIG.isEnableCopperTools()) {
+            getOrCreateTagBuilder(PICKAXES)
+                    .add(COPPER_PICKAXE);
+            getOrCreateTagBuilder(AXES)
+                    .add(COPPER_AXE);
+            getOrCreateTagBuilder(SWORDS)
+                    .add(COPPER_SWORD);
+            getOrCreateTagBuilder(HOES)
+                    .add(COPPER_HOE);
+            getOrCreateTagBuilder(SHOVELS)
+                    .add(COPPER_SHOVEL);
+        }
     }
 }
 
