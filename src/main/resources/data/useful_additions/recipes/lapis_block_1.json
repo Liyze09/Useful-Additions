@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "useful_additions:mini_lapis_block"
+    },
+    {
+      "item": "useful_additions:mini_lapis_block"
+    },
+    {
+      "item": "useful_additions:mini_lapis_block"
+    },
+    {
+      "item": "useful_additions:mini_lapis_block"
+    },
+    {
+      "item": "useful_additions:mini_lapis_block"
+    },
+    {
+      "item": "useful_additions:mini_lapis_block"
+    }
+  ],
+  "result": {
+    "item": "minecraft:lapis_block",
+    "count": 2
+  }
+}

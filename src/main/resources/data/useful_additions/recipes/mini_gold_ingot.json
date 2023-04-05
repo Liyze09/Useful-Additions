@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "result": {
+  "item": "useful_additions:mini_gold_ingot",
+  "count": 1
+ },
+ "ingredients": [
+  {
+   "item": "minecraft:gold_nugget"
+  },
+  {
+   "item": "minecraft:gold_nugget"
+  },
+  {
+   "item": "minecraft:gold_nugget"
+  },
+  {
+   "item": "minecraft:gold_nugget"
+  }
+ ]
+}

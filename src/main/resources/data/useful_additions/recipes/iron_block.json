@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "useful_additions:mini_iron_ingot"
+    },
+    {
+      "item": "useful_additions:mini_iron_ingot"
+    },
+    {
+      "item": "useful_additions:mini_iron_ingot"
+    },
+    {
+      "item": "useful_additions:mini_iron_ingot"
+    },
+    {
+      "item": "useful_additions:mini_iron_ingot"
+    },
+    {
+      "item": "useful_additions:mini_iron_ingot"
+    },
+    {
+      "item": "useful_additions:mini_iron_ingot"
+    },
+    {
+      "item": "useful_additions:mini_iron_ingot"
+    },
+    {
+      "item": "useful_additions:mini_iron_ingot"
+    }
+  ],
+  "result": {
+    "item": "minecraft:iron_ingot",
+    "count": 3
+  }
+}

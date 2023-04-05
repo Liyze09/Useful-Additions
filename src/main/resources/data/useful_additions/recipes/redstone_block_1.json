@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "useful_additions:mini_redstone_block"
+    },
+    {
+      "item": "useful_additions:mini_redstone_block"
+    },
+    {
+      "item": "useful_additions:mini_redstone_block"
+    },
+    {
+      "item": "useful_additions:mini_redstone_block"
+    },
+    {
+      "item": "useful_additions:mini_redstone_block"
+    },
+    {
+      "item": "useful_additions:mini_redstone_block"
+    }
+  ],
+  "result": {
+    "item": "minecraft:redstone_block",
+    "count": 2
+  }
+}

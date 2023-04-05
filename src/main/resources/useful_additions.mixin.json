@@ -1,0 +1,13 @@
+{
+
+  "required": true,
+  "package": "net.liyze.usefuladditions.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "RecipesLoadMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}
