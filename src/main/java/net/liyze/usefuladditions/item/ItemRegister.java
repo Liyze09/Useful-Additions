@@ -1,4 +1,4 @@
-package net.liyze.usefuladditions.registy;
+package net.liyze.usefuladditions.item;
 
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -16,11 +16,11 @@ public class ItemRegister {
             Registry.register(Registry.ITEM, new Identifier(ID, "mini_lapis_lazuli_block"), MINI_LAPIS_LAZULI_BLOCK);
         }
         if (CONFIG.isEnableCopperTools()) {
-            Registry.register(Registry.ITEM, new Identifier(ID, "copper_pickaxe"), COPPER_PICKAXE);
             Registry.register(Registry.ITEM, new Identifier(ID, "copper_sword"), COPPER_SWORD);
+            Registry.register(Registry.ITEM, new Identifier(ID, "copper_shovel"), COPPER_SHOVEL);
+            Registry.register(Registry.ITEM, new Identifier(ID, "copper_pickaxe"), COPPER_PICKAXE);
             Registry.register(Registry.ITEM, new Identifier(ID, "copper_axe"), COPPER_AXE);
             Registry.register(Registry.ITEM, new Identifier(ID, "copper_hoe"), COPPER_HOE);
-            Registry.register(Registry.ITEM, new Identifier(ID, "copper_shovel"), COPPER_SHOVEL);
         }
         if (CONFIG.isEnableCopperArmors()) {
             Registry.register(Registry.ITEM, new Identifier(ID, "copper_helmet"), COPPER_HELMET);
