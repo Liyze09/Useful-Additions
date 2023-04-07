@@ -1,4 +1,4 @@
-package net.liyze.usefuladditions.item;
+package net.liyze.usefuladditions.register;
 
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -27,6 +27,13 @@ public class ItemRegister {
             Registry.register(Registry.ITEM, new Identifier(ID, "copper_chestplate"), COPPER_CHESTPLATE);
             Registry.register(Registry.ITEM, new Identifier(ID, "copper_leggings"), COPPER_LEGGINGS);
             Registry.register(Registry.ITEM, new Identifier(ID, "copper_boots"), COPPER_BOOTS);
+        }
+        if (CONFIG.isEnableIceTools()) {
+            Registry.register(Registry.ITEM, new Identifier(ID, "ice_sword"), ICE_SWORD);
+            Registry.register(Registry.ITEM, new Identifier(ID, "ice_shovel"), ICE_SHOVEL);
+            Registry.register(Registry.ITEM, new Identifier(ID, "ice_pickaxe"), ICE_PICKAXE);
+            Registry.register(Registry.ITEM, new Identifier(ID, "ice_axe"), ICE_AXE);
+            Registry.register(Registry.ITEM, new Identifier(ID, "ice_hoe"), ICE_HOE);
         }
     }
 }

@@ -1,6 +1,6 @@
 /*
  * Used code from Farmer's Delight Fabric by newhoryzon
- * with MIT License.
+ * under MIT License.
  * */
 package net.liyze.usefuladditions.util;
 
@@ -22,6 +22,8 @@ public final class Configuration {
     private boolean enableMiniIngots = true;
     private boolean enableCopperTools = true;
     private boolean enableCopperArmors = true;
+    private boolean enableIceTools = true;
+    private boolean enableQuartize = true;
 
     public Configuration() {
     }
@@ -66,5 +68,13 @@ public final class Configuration {
 
     public boolean isEnableCopperArmors() {
         return enableCopperArmors;
+    }
+
+    public boolean isEnableIceTools() {
+        return enableIceTools;
+    }
+
+    public boolean isEnableQuartize() {
+        return enableQuartize;
     }
 }

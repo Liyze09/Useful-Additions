@@ -1,5 +1,4 @@
 {
-
   "required": true,
   "package": "net.liyze.usefuladditions.mixin",
   "compatibilityLevel": "JAVA_17",

@@ -1,16 +1,12 @@
 package net.liyze.usefuladditions.item;
 
-import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
-import net.minecraft.util.Identifier;
 
-import static net.liyze.usefuladditions.UsefulAdditions.ID;
+import static net.liyze.usefuladditions.UsefulAdditions.ITEM_GROUP;
 
 public class ItemsConfiguration {
-    public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(new Identifier(ID, "main"),
-            () -> new ItemStack(net.minecraft.item.Items.BUCKET));
 
     /*Mini Items*/
     public static final Item MINI_GOLD_INGOT = new Item(new FabricItemSettings().group(ITEM_GROUP));
@@ -18,15 +14,21 @@ public class ItemsConfiguration {
     public static final Item MINI_REDSTONE_BLOCK = new Item(new FabricItemSettings().group(ITEM_GROUP));
     public static final Item MINI_LAPIS_BLOCK = new Item(new FabricItemSettings().group(ITEM_GROUP));
     /*Copper Tools*/
-    public static final ToolItem COPPER_PICKAXE = new PickaxeItem(CopperToolMaterial.INSTANCE, 0, -2.8F, new FabricItemSettings().group(ITEM_GROUP));
+    public static final ToolItem COPPER_PICKAXE = new CustomPickaxeBuilder(CopperToolMaterial.INSTANCE, 0, -2.8F, new FabricItemSettings().group(ITEM_GROUP));
     public static final ToolItem COPPER_SWORD = new SwordItem(CopperToolMaterial.INSTANCE, 3, -2.6F, new FabricItemSettings().group(ITEM_GROUP));
-    public static final ToolItem COPPER_AXE = new AxeItem(CopperToolMaterial.INSTANCE, 5, -3.2F, new FabricItemSettings().group(ITEM_GROUP));
-    public static final ToolItem COPPER_SHOVEL = new CustomHoeBuilder(CopperToolMaterial.INSTANCE, 1, -3.0F, new FabricItemSettings().group(ITEM_GROUP));
-    public static final ToolItem COPPER_HOE = new ShovelItem(CopperToolMaterial.INSTANCE, -3, -1.5F, new Item.Settings().group(ITEM_GROUP));
+    public static final ToolItem COPPER_AXE = new CustomAxeBuilder(CopperToolMaterial.INSTANCE, 5, -3.2F, new FabricItemSettings().group(ITEM_GROUP));
+    public static final ToolItem COPPER_SHOVEL = new CustomHoeBuilder(CopperToolMaterial.INSTANCE, 1, -3, new FabricItemSettings().group(ITEM_GROUP));
+    public static final ToolItem COPPER_HOE = new ShovelItem(CopperToolMaterial.INSTANCE, -3, -1.5F, new FabricItemSettings().group(ITEM_GROUP));
     /*Copper Armors*/
     public static final ArmorMaterial COPPER_ARMOR_MATERIAL = new CopperArmorMaterial();
     public static final ArmorItem COPPER_HELMET = new ArmorItem(COPPER_ARMOR_MATERIAL, EquipmentSlot.HEAD, new FabricItemSettings().group(ITEM_GROUP));
     public static final ArmorItem COPPER_CHESTPLATE = new ArmorItem(COPPER_ARMOR_MATERIAL, EquipmentSlot.CHEST, new FabricItemSettings().group(ITEM_GROUP));
     public static final ArmorItem COPPER_LEGGINGS = new ArmorItem(COPPER_ARMOR_MATERIAL, EquipmentSlot.LEGS, new FabricItemSettings().group(ITEM_GROUP));
     public static final ArmorItem COPPER_BOOTS = new ArmorItem(COPPER_ARMOR_MATERIAL, EquipmentSlot.FEET, new FabricItemSettings().group(ITEM_GROUP));
+    /*Ice Tools*/
+    public static final ToolItem ICE_SWORD = new SwordItem(IceToolMaterial.INSTANCE, 10, -2.2F, new FabricItemSettings().group(ITEM_GROUP));
+    public static final ToolItem ICE_PICKAXE = new CustomPickaxeBuilder(IceToolMaterial.INSTANCE, 7, -2.6F, new FabricItemSettings().group(ITEM_GROUP));
+    public static final ToolItem ICE_AXE = new CustomAxeBuilder(CopperToolMaterial.INSTANCE, 14, -2.9F, new FabricItemSettings().group(ITEM_GROUP));
+    public static final ToolItem ICE_SHOVEL = new CustomHoeBuilder(CopperToolMaterial.INSTANCE, 9, -3, new FabricItemSettings().group(ITEM_GROUP));
+    public static final ToolItem ICE_HOE = new ShovelItem(CopperToolMaterial.INSTANCE, 2, -0.5F, new FabricItemSettings().group(ITEM_GROUP));
 }

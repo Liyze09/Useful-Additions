@@ -22,16 +22,16 @@ public class Tags extends FabricTagProvider<Item> {
 
     @Override
     public void generateTags() {
-            getOrCreateTagBuilder(PICKAXES)
-                    .add(COPPER_PICKAXE);
-            getOrCreateTagBuilder(AXES)
-                    .add(COPPER_AXE);
-            getOrCreateTagBuilder(SWORDS)
-                    .add(COPPER_SWORD);
-            getOrCreateTagBuilder(HOES)
-                    .add(COPPER_HOE);
-            getOrCreateTagBuilder(SHOVELS)
-                    .add(COPPER_SHOVEL);
+        getOrCreateTagBuilder(PICKAXES)
+                .add(COPPER_PICKAXE);
+        getOrCreateTagBuilder(AXES)
+                .add(COPPER_AXE);
+        getOrCreateTagBuilder(SWORDS)
+                .add(COPPER_SWORD);
+        getOrCreateTagBuilder(HOES)
+                .add(COPPER_HOE);
+        getOrCreateTagBuilder(SHOVELS)
+                .add(COPPER_SHOVEL);
     }
 }
 
