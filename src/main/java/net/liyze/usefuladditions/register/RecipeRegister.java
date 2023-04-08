@@ -142,8 +142,8 @@ public class RecipeRegister {
                             '#',
                             '|'
                     ),
-                    Lists.newArrayList(new Identifier("c", "copper_ingots"), new Identifier("stick")),
-                    Lists.newArrayList("tag", "item"),
+                    Lists.newArrayList(new Identifier("ice"), new Identifier("stick")),
+                    Lists.newArrayList("item", "item"),
                     Lists.newArrayList(
                             "#",
                             "|",
