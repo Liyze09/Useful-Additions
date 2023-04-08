@@ -5,7 +5,7 @@ import net.minecraft.util.Identifier;
 
 import java.util.ArrayList;
 
-public class RecipeGen {
+public class RecipeLoad {
     public static JsonObject createShapedRecipeJson(ArrayList<Character> keys, ArrayList<Identifier> items, ArrayList<String> type, ArrayList<String> pattern, Identifier output) {
         //创建新的json对象，我们在其中保存配方。
         JsonObject json = new JsonObject();

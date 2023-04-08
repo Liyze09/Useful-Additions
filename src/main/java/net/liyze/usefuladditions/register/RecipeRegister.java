@@ -5,7 +5,7 @@ import com.google.gson.JsonObject;
 import net.minecraft.util.Identifier;
 
 import static net.liyze.usefuladditions.UsefulAdditions.CONFIG;
-import static net.liyze.usefuladditions.util.RecipeGen.createShapedRecipeJson;
+import static net.liyze.usefuladditions.util.RecipeLoad.createShapedRecipeJson;
 
 public class RecipeRegister {
 
