@@ -3,9 +3,9 @@
   "id": "useful_additions",
   "version": "${version}",
   "name": "Useful Additions",
-  "description": "",
+  "description": "A mod has some small Not Vanilla things,\nall of them can control with config file",
   "authors": [
-    "Liyze"
+    "Liyze","Perry"
   ],
   "contact": {
     "sources": "https://github.com/Liyze09/Useful-Additions"

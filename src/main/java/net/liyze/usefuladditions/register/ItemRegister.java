@@ -13,7 +13,7 @@ public class ItemRegister {
             Registry.register(Registry.ITEM, new Identifier(ID, "mini_gold_ingot"), MINI_GOLD_INGOT);
             Registry.register(Registry.ITEM, new Identifier(ID, "mini_iron_ingot"), MINI_IRON_INGOT);
             Registry.register(Registry.ITEM, new Identifier(ID, "mini_redstone_block"), MINI_REDSTONE_BLOCK);
-            Registry.register(Registry.ITEM, new Identifier(ID, "mini_lapis_lazuli_block"), MINI_LAPIS_BLOCK);
+            Registry.register(Registry.ITEM, new Identifier(ID, "mini_lapis_block"), MINI_LAPIS_BLOCK);
         }
         if (CONFIG.isEnableCopperTools()) {
             Registry.register(Registry.ITEM, new Identifier(ID, "copper_sword"), COPPER_SWORD);
