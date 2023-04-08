@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "useful_additions:item/mini_lapis_lazuli_block"
+    "layer0": "useful_additions:item/mini_lapis_block"
   }
 }
