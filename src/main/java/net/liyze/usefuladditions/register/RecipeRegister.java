@@ -5,7 +5,8 @@ import com.google.gson.JsonObject;
 import net.minecraft.util.Identifier;
 
 import static net.liyze.usefuladditions.UsefulAdditions.CONFIG;
-import static net.liyze.usefuladditions.util.RecipeLoad.createShapedRecipeJson;
+import static net.liyze.usefuladditions.UsefulAdditions.ID;
+import static net.liyze.usefuladditions.util.RecipeLoad.*;
 
 public class RecipeRegister {
 
@@ -22,7 +23,7 @@ public class RecipeRegister {
                         " | ",
                         " | "
                 ),
-                new Identifier("useful_additions:copper_pickaxe"),1
+                new Identifier(ID,"copper_pickaxe"),1
             );
             COPPER_SWORD_RECIPE = createShapedRecipeJson(
                 Lists.newArrayList(
@@ -36,7 +37,7 @@ public class RecipeRegister {
                         "#",
                         "|"
                 ),
-                new Identifier("useful_additions:copper_sword"),1
+                new Identifier(ID,"copper_sword"),1
             );
             COPPER_AXE_RECIPE = createShapedRecipeJson(
                     Lists.newArrayList(
@@ -50,7 +51,7 @@ public class RecipeRegister {
                             "#|",
                             " |"
                     ),
-                    new Identifier("useful_additions:copper_axe"),1
+                    new Identifier(ID,"copper_axe"),1
             );
             COPPER_HOE_RECIPE = createShapedRecipeJson(
                     Lists.newArrayList(
@@ -64,7 +65,7 @@ public class RecipeRegister {
                             " |",
                             " |"
                     ),
-                    new Identifier("useful_additions:copper_hoe"),1
+                    new Identifier(ID,"copper_hoe"),1
             );
             COPPER_SHOVEL_RECIPE = createShapedRecipeJson(
                     Lists.newArrayList(
@@ -78,7 +79,7 @@ public class RecipeRegister {
                             "|",
                             "|"
                     ),
-                    new Identifier("useful_additions:copper_shovel"),1
+                    new Identifier(ID,"copper_shovel"),1
             );
         }if(CONFIG.isEnableIceTools()){
             ICE_PICKAXE_RECIPE = createShapedRecipeJson(
@@ -93,7 +94,7 @@ public class RecipeRegister {
                             " | ",
                             " | "
                     ),
-                    new Identifier("useful_additions:ice_pickaxe"),1
+                    new Identifier(ID,"ice_pickaxe"),1
             );
             ICE_SWORD_RECIPE = createShapedRecipeJson(
                     Lists.newArrayList(
@@ -107,7 +108,7 @@ public class RecipeRegister {
                             "#",
                             "|"
                     ),
-                    new Identifier("useful_additions:ice_sword"),1
+                    new Identifier(ID,"ice_sword"),1
             );
             ICE_AXE_RECIPE = createShapedRecipeJson(
                     Lists.newArrayList(
@@ -121,7 +122,7 @@ public class RecipeRegister {
                             "#|",
                             " |"
                     ),
-                    new Identifier("useful_additions:ice_axe"),1
+                    new Identifier(ID,"ice_axe"),1
             );
             ICE_HOE_RECIPE = createShapedRecipeJson(
                     Lists.newArrayList(
@@ -135,7 +136,7 @@ public class RecipeRegister {
                             " |",
                             " |"
                     ),
-                    new Identifier("useful_additions:ice_hoe"),1
+                    new Identifier(ID,"ice_hoe"),1
             );
             ICE_SHOVEL_RECIPE = createShapedRecipeJson(
                     Lists.newArrayList(
@@ -149,7 +150,16 @@ public class RecipeRegister {
                             "|",
                             "|"
                     ),
-                    new Identifier("useful_additions:ice_shovel"),1
+                    new Identifier("useful_additions","ice_shovel"),1
+            );
+            MINI_GOLD_INGOT_RECIPE = createShapelessRecipeJson(
+                    Lists.newArrayList(
+                            new Identifier("minecraft","gold_nugget"),
+                            new Identifier("minecraft","gold_nugget"),
+                            new Identifier("minecraft","gold_nugget")
+                    ),
+                    Lists.newArrayList("item","item","item"),
+                    new Identifier(ID,""),1
             );
         }
     }
@@ -163,4 +173,5 @@ public class RecipeRegister {
     public static JsonObject ICE_AXE_RECIPE = null;
     public static JsonObject ICE_HOE_RECIPE = null;
     public static JsonObject ICE_SHOVEL_RECIPE = null;
+    public static JsonObject MINI_GOLD_INGOT_RECIPE = null;
 }
