@@ -15,5 +15,11 @@
   "item.useful_additions.copper_helmet": "Copper Helmet",
   "item.useful_additions.copper_chestplate": "Copper Chestplate",
   "item.useful_additions.copper_leggings": "Copper Leggings",
-  "item.useful_additions.copper_boots": "Copper Boots"
+  "item.useful_additions.copper_boots": "Copper Boots",
+
+  "item.useful_additions.ice_pickaxe": "Ice Pickaxe",
+  "item.useful_additions.ice_sword": "Ice Sword",
+  "item.useful_additions.ice_hoe": "Ice Hoe",
+  "item.useful_additions.ice_shovel": "Ice Shovel",
+  "item.useful_additions.ice_axe": "Ice Axe"
 }

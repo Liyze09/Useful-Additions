@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "useful_additions:copper_axe"
+    "useful_additions:copper_axe",
+    "useful_additions:ice_axe"
   ]
 }

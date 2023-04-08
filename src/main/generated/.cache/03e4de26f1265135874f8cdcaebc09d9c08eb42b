@@ -1,6 +1,6 @@
-// 1.19.2	2023-04-05T10:27:40.891538	Tags for minecraft:item
-c2b68ea2b925eaa17317a263f859f78ac7e4d67d data/fabric/tags/items/shovels.json
-81a13330704c5a66f2acdde93f4288c5f1ee5781 data/fabric/tags/items/swords.json
-977099895a8005fe4673a7af9a4f819e6ea75005 data/fabric/tags/items/axes.json
-6c91bc08719601fefac17bc37a0e14fb8bcf4086 data/fabric/tags/items/pickaxes.json
-ec9ccdd958ff1ac48fe53d6373a3e11faaf51003 data/fabric/tags/items/hoes.json
+// 1.19.2	2023-04-08T08:56:58.345606	Tags for minecraft:item
+f085d8888fdf6198033659969eb00e75cd371a0b data/fabric/tags/items/shovels.json
+914663c64fd5b1df67e170957c598fe6cdcbb2fa data/fabric/tags/items/swords.json
+4934299a3babac499a40d1118886149a3ff05175 data/fabric/tags/items/axes.json
+12e3b0a810443181ce5529500a30751de376480b data/fabric/tags/items/pickaxes.json
+25904f92a34031eb952a28a7b22c024730b92afa data/fabric/tags/items/hoes.json

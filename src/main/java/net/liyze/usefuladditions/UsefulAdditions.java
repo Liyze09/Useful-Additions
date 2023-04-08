@@ -11,12 +11,12 @@ import org.slf4j.LoggerFactory;
 
 import static net.liyze.usefuladditions.register.BlockRegister.registerBlocks;
 import static net.liyze.usefuladditions.register.ItemRegister.registerItems;
+import static net.liyze.usefuladditions.register.RecipeRegister.registerRecipes;
 
 public class UsefulAdditions implements ModInitializer {
     public static final String ID = "useful_additions";
     public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(new Identifier(ID, "main"),
             () -> new ItemStack(net.minecraft.item.Items.BUCKET));
-
     public static Configuration CONFIG = new Configuration();
     public static final Logger LOGGER = LoggerFactory.getLogger("Useful Additions");
 
@@ -24,6 +24,7 @@ public class UsefulAdditions implements ModInitializer {
         loadConfiguration();
         registerItems();
         registerBlocks();
+        registerRecipes();
     }
 
     protected void loadConfiguration() {

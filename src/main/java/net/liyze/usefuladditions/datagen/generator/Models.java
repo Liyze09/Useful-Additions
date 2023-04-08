@@ -32,6 +32,12 @@ public class Models extends FabricModelProvider {
         itemModelGenerator.register(COPPER_CHESTPLATE, GENERATED);
         itemModelGenerator.register(COPPER_LEGGINGS, GENERATED);
         itemModelGenerator.register(COPPER_BOOTS, GENERATED);
+
+        itemModelGenerator.register(ICE_AXE, HANDHELD);
+        itemModelGenerator.register(ICE_PICKAXE, HANDHELD);
+        itemModelGenerator.register(ICE_HOE, HANDHELD);
+        itemModelGenerator.register(ICE_SHOVEL, HANDHELD);
+        itemModelGenerator.register(ICE_SWORD, HANDHELD);
     }
 
     public Models(FabricDataGenerator generator) {

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "useful_additions:copper_pickaxe"
+    "useful_additions:copper_pickaxe",
+    "useful_additions:ice_pickaxe"
   ]
 }
