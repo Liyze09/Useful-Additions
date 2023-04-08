@@ -22,7 +22,7 @@ public class RecipeRegister {
                         " | ",
                         " | "
                 ),
-                new Identifier("useful_additions:copper_pickaxe")
+                new Identifier("useful_additions:copper_pickaxe"),1
             );
             COPPER_SWORD_RECIPE = createShapedRecipeJson(
                 Lists.newArrayList(
@@ -36,7 +36,7 @@ public class RecipeRegister {
                         "#",
                         "|"
                 ),
-                new Identifier("useful_additions:copper_sword")
+                new Identifier("useful_additions:copper_sword"),1
             );
             COPPER_AXE_RECIPE = createShapedRecipeJson(
                     Lists.newArrayList(
@@ -50,7 +50,7 @@ public class RecipeRegister {
                             "#|",
                             " |"
                     ),
-                    new Identifier("useful_additions:copper_axe")
+                    new Identifier("useful_additions:copper_axe"),1
             );
             COPPER_HOE_RECIPE = createShapedRecipeJson(
                     Lists.newArrayList(
@@ -64,7 +64,7 @@ public class RecipeRegister {
                             " |",
                             " |"
                     ),
-                    new Identifier("useful_additions:copper_hoe")
+                    new Identifier("useful_additions:copper_hoe"),1
             );
             COPPER_SHOVEL_RECIPE = createShapedRecipeJson(
                     Lists.newArrayList(
@@ -78,7 +78,7 @@ public class RecipeRegister {
                             "|",
                             "|"
                     ),
-                    new Identifier("useful_additions:copper_shovel")
+                    new Identifier("useful_additions:copper_shovel"),1
             );
         }if(CONFIG.isEnableIceTools()){
             ICE_PICKAXE_RECIPE = createShapedRecipeJson(
@@ -93,7 +93,7 @@ public class RecipeRegister {
                             " | ",
                             " | "
                     ),
-                    new Identifier("useful_additions:ice_pickaxe")
+                    new Identifier("useful_additions:ice_pickaxe"),1
             );
             ICE_SWORD_RECIPE = createShapedRecipeJson(
                     Lists.newArrayList(
@@ -107,7 +107,7 @@ public class RecipeRegister {
                             "#",
                             "|"
                     ),
-                    new Identifier("useful_additions:ice_sword")
+                    new Identifier("useful_additions:ice_sword"),1
             );
             ICE_AXE_RECIPE = createShapedRecipeJson(
                     Lists.newArrayList(
@@ -121,7 +121,7 @@ public class RecipeRegister {
                             "#|",
                             " |"
                     ),
-                    new Identifier("useful_additions:ice_axe")
+                    new Identifier("useful_additions:ice_axe"),1
             );
             ICE_HOE_RECIPE = createShapedRecipeJson(
                     Lists.newArrayList(
@@ -135,7 +135,7 @@ public class RecipeRegister {
                             " |",
                             " |"
                     ),
-                    new Identifier("useful_additions:ice_hoe")
+                    new Identifier("useful_additions:ice_hoe"),1
             );
             ICE_SHOVEL_RECIPE = createShapedRecipeJson(
                     Lists.newArrayList(
@@ -149,7 +149,7 @@ public class RecipeRegister {
                             "|",
                             "|"
                     ),
-                    new Identifier("useful_additions:ice_shovel")
+                    new Identifier("useful_additions:ice_shovel"),1
             );
         }
     }
