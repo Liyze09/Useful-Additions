@@ -10,9 +10,9 @@ import static net.liyze.usefuladditions.block.BlocksConfiguration.QUARTZITE_BLOC
 
 public class BlockRegister {
     public static void registerBlocks() {
-        if (CONFIG.isEnableQuartize()) {
-            Registry.register(Registry.BLOCK, new Identifier(ID, "quartize"), QUARTZITE_BLOCK);
-            Registry.register(Registry.ITEM, new Identifier(ID, "quartize"), QUARTZITE_ITEM);
+        if (CONFIG.isEnableQuartzite()) {
+            Registry.register(Registry.BLOCK, new Identifier(ID, "quartzite"), QUARTZITE_BLOCK);
+            Registry.register(Registry.ITEM, new Identifier(ID, "quartzite"), QUARTZITE_ITEM);
         }
     }
 }

@@ -23,7 +23,7 @@ public final class Configuration {
     private boolean enableCopperTools = true;
     private boolean enableCopperArmors = true;
     private boolean enableIceTools = true;
-    private boolean enableQuartize = true;
+    private boolean enableQuartzite = true;
 
     public Configuration() {
     }
@@ -74,7 +74,7 @@ public final class Configuration {
         return enableIceTools;
     }
 
-    public boolean isEnableQuartize() {
-        return enableQuartize;
+    public boolean isEnableQuartzite() {
+        return enableQuartzite;
     }
 }

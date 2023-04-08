@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 
 import static net.liyze.usefuladditions.UsefulAdditions.ITEM_GROUP;
+import static net.liyze.usefuladditions.block.BlockItemsConfiguration.QUARTZITE_ITEM;
 import static net.liyze.usefuladditions.item.ItemsConfiguration.*;
 
 public class EnglishLanguage extends FabricLanguageProvider {
@@ -35,5 +36,8 @@ public class EnglishLanguage extends FabricLanguageProvider {
         translationBuilder.add(ICE_PICKAXE,"Ice Pickaxe");
         translationBuilder.add(ICE_SHOVEL,"Ice Shovel");
         translationBuilder.add(ICE_SWORD,"Ice Sword");
+
+        translationBuilder.add(QUARTZITE_ITEM,"Quartzite");
+
     }
 }

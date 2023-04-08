@@ -15,7 +15,7 @@ import static net.liyze.usefuladditions.block.WorldgenConfiguration.*;
 
 public class WorldgenRegister {
     public static void registerFeatures() {
-        if (CONFIG.isEnableQuartize()){
+        if (CONFIG.isEnableQuartzite()){
             Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
                 new Identifier(ID, "overworld_quartzite"), OVERWORLD_QUARTZITE_CONFIGURED_FEATURE);
             Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(ID, "overworld_quartzite"),
