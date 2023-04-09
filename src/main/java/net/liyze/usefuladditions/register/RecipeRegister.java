@@ -101,7 +101,7 @@ public class RecipeRegister {
                             '#',
                             '|'
                     ),
-                    Lists.newArrayList(new Identifier("c", "copper_ingots"), new Identifier("stick")),
+                    Lists.newArrayList(new Identifier("ice"), new Identifier("stick")),
                     Lists.newArrayList("item", "item"),
                     Lists.newArrayList(
                             "#",
@@ -233,6 +233,21 @@ public class RecipeRegister {
                     Lists.newArrayList(6),
                     Lists.newArrayList("item"),
                     new Identifier("minecraft","redstone_block"),2
+            );
+            LAPIS_BLOCK_A_RECIPE  = createStackRecipeJson(
+                    Lists.newArrayList(
+                            new Identifier(ID,"mini_lapis_block")),
+                    Lists.newArrayList(9),
+                    Lists.newArrayList("item"),
+                    new Identifier("minecraft","lapis_block"),3
+            );
+            LAPIS_BLOCK_B_RECIPE = createStackRecipeJson(
+                    Lists.newArrayList(
+                            new Identifier(ID,"mini_lapis_block")
+                    ),
+                    Lists.newArrayList(6),
+                    Lists.newArrayList("item"),
+                    new Identifier("minecraft","lapis_block"),2
             );
             }
         }

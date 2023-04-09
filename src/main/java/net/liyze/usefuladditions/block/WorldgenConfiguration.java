@@ -15,7 +15,7 @@ public class WorldgenConfiguration {
             (Feature.ORE, new OreFeatureConfig(
                     OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     Blocks.WHITE_WOOL.getDefaultState(),
-                    16));
+                    12));
 
     public static PlacedFeature OVERWORLD_QUARTZITE_PLACED_FEATURE = new PlacedFeature(
             RegistryEntry.of(OVERWORLD_QUARTZITE_CONFIGURED_FEATURE),

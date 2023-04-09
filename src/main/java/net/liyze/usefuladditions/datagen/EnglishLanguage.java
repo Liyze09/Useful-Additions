@@ -38,6 +38,5 @@ public class EnglishLanguage extends FabricLanguageProvider {
         translationBuilder.add(ICE_SWORD,"Ice Sword");
 
         translationBuilder.add(QUARTZITE_ITEM,"Quartzite");
-
     }
 }
