@@ -59,4 +59,27 @@ public class RecipeLoad {
 
         return json;
     }
+    public static JsonObject createStackRecipeJson(ArrayList<Identifier> inputs , ArrayList<Integer> count, ArrayList<String> type , Identifier output , int result_count){
+        if ( !(inputs.size() == type.size()) || !(count.size() == type.size())){
+            throw new RuntimeException();
+        }
+        JsonObject json = new JsonObject();
+        json.addProperty("type", "minecraft:crafting_shapeless");
+
+        JsonArray jsonArray = new JsonArray();
+        JsonObject individualItems;
+        for(int i = 0; i < inputs.size(); ++i){
+            individualItems = new JsonObject();
+            individualItems.addProperty(String.valueOf(type.get(i)), String.valueOf(inputs.get(i)));
+            for(int j = 0; j < count.get(i); ++j)
+                jsonArray.add(individualItems);
+        }json.add("ingredients",jsonArray);
+
+        JsonObject result = new JsonObject();
+        result.addProperty("item",output.toString());
+        result.addProperty("count",result_count);
+        json.add("result",result);
+
+        return json;
+    }
 }
