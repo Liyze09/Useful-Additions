@@ -17,7 +17,7 @@ import static net.liyze.usefuladditions.UsefulAdditions.ID;
 import static net.liyze.usefuladditions.register.RecipeRegister.*;
 
 @Mixin(RecipeManager.class)
-public class RecipeManagerMixin {
+public abstract class RecipeManagerMixin {
     @Inject(method = "apply*", at = @At("HEAD"))
     public void interceptApply(Map<Identifier, JsonElement> map, ResourceManager resourceManager, Profiler profiler, CallbackInfo info) {
         /*Shaped Crafting Recipes*/
