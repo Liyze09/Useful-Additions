@@ -7,7 +7,7 @@ import static net.liyze.usefuladditions.UsefulAdditions.ITEM_GROUP;
 import static net.liyze.usefuladditions.block.BlockItemsConfiguration.QUARTZITE_ITEM;
 import static net.liyze.usefuladditions.item.ItemsConfiguration.*;
 
-public class EnglishLanguageGen extends FabricLanguageProvider {
+class EnglishLanguageGen extends FabricLanguageProvider {
     public EnglishLanguageGen(FabricDataGenerator dataGenerator) {
         super(dataGenerator, "en_us");
     }

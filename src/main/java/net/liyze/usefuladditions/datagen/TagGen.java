@@ -9,7 +9,7 @@ import net.minecraft.util.registry.Registry;
 
 import static net.liyze.usefuladditions.item.ItemsConfiguration.*;
 
-public class TagGen extends FabricTagProvider<Item> {
+class TagGen extends FabricTagProvider<Item> {
     public TagGen(FabricDataGenerator dataGenerator) {
         super(dataGenerator, Registry.ITEM);
     }

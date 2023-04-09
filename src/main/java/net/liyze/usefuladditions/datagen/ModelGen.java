@@ -6,12 +6,13 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 
 import static net.liyze.usefuladditions.item.ItemsConfiguration.*;
-import static net.minecraft.data.client.Models.GENERATED;
-import static net.minecraft.data.client.Models.HANDHELD;
+import static net.liyze.usefuladditions.block.BlocksConfiguration.*;
+import static net.minecraft.data.client.Models.*;
 
-public class ModelGen extends FabricModelProvider {
+class ModelGen extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        blockStateModelGenerator.registerSimpleCubeAll(QUARTZITE_BLOCK);
     }
 
     @Override
