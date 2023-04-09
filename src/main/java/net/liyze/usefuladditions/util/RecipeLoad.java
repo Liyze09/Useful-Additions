@@ -36,8 +36,8 @@ public class RecipeLoad {
             json.add("result", result);
 
             return json;
-        }catch (Exception e){
-            LOGGER.error("Failed to inject recipe {}",output);
+        } catch (Exception e) {
+            LOGGER.error("Failed to inject recipe {}", output);
         }
         return null;
     }
@@ -63,8 +63,8 @@ public class RecipeLoad {
             json.add("result", result);
 
             return json;
-        }catch (Exception e){
-            LOGGER.error("Failed to inject recipe {}",output);
+        } catch (Exception e) {
+            LOGGER.error("Failed to inject recipe {}", output);
         }
         return null;
     }
@@ -90,8 +90,8 @@ public class RecipeLoad {
             json.add("result", result);
 
             return json;
-        }catch (Exception e){
-            LOGGER.error("Failed to inject recipe {}",output);
+        } catch (Exception e) {
+            LOGGER.error("Failed to inject recipe {}", output);
         }
         return null;
     }
