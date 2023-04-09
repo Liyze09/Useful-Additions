@@ -5,9 +5,10 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 
+import static net.liyze.usefuladditions.block.BlocksConfiguration.QUARTZITE_BLOCK;
 import static net.liyze.usefuladditions.item.ItemsConfiguration.*;
-import static net.liyze.usefuladditions.block.BlocksConfiguration.*;
-import static net.minecraft.data.client.Models.*;
+import static net.minecraft.data.client.Models.GENERATED;
+import static net.minecraft.data.client.Models.HANDHELD;
 
 class ModelGen extends FabricModelProvider {
     @Override
