@@ -12,8 +12,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.Map;
 
+import static net.liyze.usefuladditions.UsefulAdditions.CONFIG;
+import static net.liyze.usefuladditions.UsefulAdditions.ID;
 import static net.liyze.usefuladditions.register.RecipeRegister.*;
-import static net.liyze.usefuladditions.UsefulAdditions.*;
 
 @Mixin(RecipeManager.class)
 public class RecipeManagerMixin {
@@ -26,25 +27,27 @@ public class RecipeManagerMixin {
             map.put(new Identifier(ID, "copper_shovel"), COPPER_SHOVEL_RECIPE);
             map.put(new Identifier(ID, "copper_axe"), COPPER_AXE_RECIPE);
             map.put(new Identifier(ID, "copper_sword"), COPPER_SWORD_RECIPE);
-        }if (CONFIG.isEnableIceTools()) {
+        }
+        if (CONFIG.isEnableIceTools()) {
             map.put(new Identifier(ID, "ice_pickaxe"), ICE_PICKAXE_RECIPE);
             map.put(new Identifier(ID, "ice_axe"), ICE_AXE_RECIPE);
             map.put(new Identifier(ID, "ice_hoe"), ICE_HOE_RECIPE);
             map.put(new Identifier(ID, "ice_shovel"), ICE_SHOVEL_RECIPE);
             map.put(new Identifier(ID, "ice_sword"), ICE_SWORD_RECIPE);
-        }if (CONFIG.isEnableMiniIngots()){
-            map.put(new Identifier(ID,"mini_gold_ingot"),MINI_GOLD_INGOT_RECIPE);
-            map.put(new Identifier(ID,"mini_iron_ingot"),MINI_IRON_INGOT_RECIPE);
-            map.put(new Identifier(ID,"mini_lapis_block"),MINI_LAPIS_BLOCK_RECIPE);
-            map.put(new Identifier(ID,"mini_redstone_block"),MINI_REDSTONE_BLOCK_RECIPE);
-            map.put(new Identifier(ID,"gold_ingot_a"),GOLD_INGOT_A_RECIPE);
-            map.put(new Identifier(ID,"gold_ingot_b"),GOLD_INGOT_B_RECIPE);
-            map.put(new Identifier(ID,"iron_ingot_a"),IRON_INGOT_A_RECIPE);
-            map.put(new Identifier(ID,"iron_ingot_b"),IRON_INGOT_B_RECIPE);
-            map.put(new Identifier(ID,"lapis_block_a"),LAPIS_BLOCK_A_RECIPE);
-            map.put(new Identifier(ID,"lapis_block_b"),LAPIS_BLOCK_B_RECIPE);
-            map.put(new Identifier(ID,"redstone_block_a"),REDSTONE_BLOCK_A_RECIPE);
-            map.put(new Identifier(ID,"redstone_block_b"),REDSTONE_BLOCK_B_RECIPE);
+        }
+        if (CONFIG.isEnableMiniIngots()) {
+            map.put(new Identifier(ID, "mini_gold_ingot"), MINI_GOLD_INGOT_RECIPE);
+            map.put(new Identifier(ID, "mini_iron_ingot"), MINI_IRON_INGOT_RECIPE);
+            map.put(new Identifier(ID, "mini_lapis_block"), MINI_LAPIS_BLOCK_RECIPE);
+            map.put(new Identifier(ID, "mini_redstone_block"), MINI_REDSTONE_BLOCK_RECIPE);
+            map.put(new Identifier(ID, "gold_ingot_a"), GOLD_INGOT_A_RECIPE);
+            map.put(new Identifier(ID, "gold_ingot_b"), GOLD_INGOT_B_RECIPE);
+            map.put(new Identifier(ID, "iron_ingot_a"), IRON_INGOT_A_RECIPE);
+            map.put(new Identifier(ID, "iron_ingot_b"), IRON_INGOT_B_RECIPE);
+            map.put(new Identifier(ID, "lapis_block_a"), LAPIS_BLOCK_A_RECIPE);
+            map.put(new Identifier(ID, "lapis_block_b"), LAPIS_BLOCK_B_RECIPE);
+            map.put(new Identifier(ID, "redstone_block_a"), REDSTONE_BLOCK_A_RECIPE);
+            map.put(new Identifier(ID, "redstone_block_b"), REDSTONE_BLOCK_B_RECIPE);
         }
     }
 }

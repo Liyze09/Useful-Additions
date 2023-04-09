@@ -9,7 +9,7 @@ import static net.liyze.usefuladditions.item.ItemsConfiguration.*;
 import static net.minecraft.data.client.Models.GENERATED;
 import static net.minecraft.data.client.Models.HANDHELD;
 
-public class Models extends FabricModelProvider {
+public class ModelGen extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
     }
@@ -40,7 +40,7 @@ public class Models extends FabricModelProvider {
         itemModelGenerator.register(ICE_SWORD, HANDHELD);
     }
 
-    public Models(FabricDataGenerator generator) {
+    public ModelGen(FabricDataGenerator generator) {
         super(generator);
     }
 }

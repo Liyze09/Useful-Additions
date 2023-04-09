@@ -28,6 +28,7 @@ public class UsefulAdditions implements ModInitializer {
         registerRecipes();
         registerFeatures();
     }
+
     private void loadConfiguration() {
         CONFIG = Configuration.load();
     }

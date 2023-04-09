@@ -1,14 +1,15 @@
 package net.liyze.usefuladditions.util;
 
-import com.google.gson.*;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import net.minecraft.util.Identifier;
 
 import java.util.ArrayList;
 
 public class RecipeLoad {
     /* Shaped Crafting Recipes */
-    public static JsonObject createShapedRecipeJson(ArrayList<Character> keys, ArrayList<Identifier> items, ArrayList<String> type, ArrayList<String> pattern, Identifier output ,int result_count) {
-        if ( !(keys.size() == items.size()) || !(items.size() == type.size()) ){
+    public static JsonObject createShapedRecipeJson(ArrayList<Character> keys, ArrayList<Identifier> items, ArrayList<String> type, ArrayList<String> pattern, Identifier output, int result_count) {
+        if (!(keys.size() == items.size()) || !(items.size() == type.size())) {
             throw new RuntimeException();
         }
         JsonObject json = new JsonObject();
@@ -26,7 +27,8 @@ public class RecipeLoad {
             individualKey = new JsonObject();
             individualKey.addProperty(String.valueOf(type.get(i)), items.get(i).toString());
             keyList.add(String.valueOf(keys.get(i)), individualKey);
-        }json.add("key", keyList);
+        }
+        json.add("key", keyList);
 
         JsonObject result = new JsonObject();
         result.addProperty("item", output.toString());
@@ -37,8 +39,8 @@ public class RecipeLoad {
     }
 
     /* Shapeless Crafting Recipes */
-    public static JsonObject createShapelessRecipeJson(ArrayList<Identifier> inputs , ArrayList<String> type , Identifier output , int result_count){
-        if ( !(inputs.size() == type.size()) ){
+    public static JsonObject createShapelessRecipeJson(ArrayList<Identifier> inputs, ArrayList<String> type, Identifier output, int result_count) {
+        if (!(inputs.size() == type.size())) {
             throw new RuntimeException();
         }
         JsonObject json = new JsonObject();
@@ -46,21 +48,23 @@ public class RecipeLoad {
 
         JsonArray jsonArray = new JsonArray();
         JsonObject individualItems;
-        for(int i = 0; i < inputs.size(); ++i){
+        for (int i = 0; i < inputs.size(); ++i) {
             individualItems = new JsonObject();
             individualItems.addProperty(String.valueOf(type.get(i)), String.valueOf(inputs.get(i)));
             jsonArray.add(individualItems);
-        }json.add("ingredients",jsonArray);
+        }
+        json.add("ingredients", jsonArray);
 
         JsonObject result = new JsonObject();
-        result.addProperty("item",output.toString());
-        result.addProperty("count",result_count);
-        json.add("result",result);
+        result.addProperty("item", output.toString());
+        result.addProperty("count", result_count);
+        json.add("result", result);
 
         return json;
     }
-    public static JsonObject createStackRecipeJson(ArrayList<Identifier> inputs , ArrayList<Integer> count, ArrayList<String> type , Identifier output , int result_count){
-        if ( !(inputs.size() == type.size()) || !(count.size() == type.size())){
+
+    public static JsonObject createStackRecipeJson(ArrayList<Identifier> inputs, ArrayList<Integer> count, ArrayList<String> type, Identifier output, int result_count) {
+        if (!(inputs.size() == type.size()) || !(count.size() == type.size())) {
             throw new RuntimeException();
         }
         JsonObject json = new JsonObject();
@@ -68,17 +72,18 @@ public class RecipeLoad {
 
         JsonArray jsonArray = new JsonArray();
         JsonObject individualItems;
-        for(int i = 0; i < inputs.size(); ++i){
+        for (int i = 0; i < inputs.size(); ++i) {
             individualItems = new JsonObject();
             individualItems.addProperty(String.valueOf(type.get(i)), String.valueOf(inputs.get(i)));
-            for(int j = 0; j < count.get(i); ++j)
+            for (int j = 0; j < count.get(i); ++j)
                 jsonArray.add(individualItems);
-        }json.add("ingredients",jsonArray);
+        }
+        json.add("ingredients", jsonArray);
 
         JsonObject result = new JsonObject();
-        result.addProperty("item",output.toString());
-        result.addProperty("count",result_count);
-        json.add("result",result);
+        result.addProperty("item", output.toString());
+        result.addProperty("count", result_count);
+        json.add("result", result);
 
         return json;
     }
