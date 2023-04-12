@@ -32,3 +32,21 @@ public class ItemsConfiguration {
     public static final ToolItem ICE_SHOVEL = new CustomHoeBuilder(CopperToolMaterial.INSTANCE, 9, -3, new FabricItemSettings().group(ITEM_GROUP));
     public static final ToolItem ICE_HOE = new ShovelItem(CopperToolMaterial.INSTANCE, 2, -0.5F, new FabricItemSettings().group(ITEM_GROUP));
 }
+
+class CustomAxeBuilder extends PickaxeItem {
+    public CustomAxeBuilder(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
+        super(material, attackDamage, attackSpeed, settings);
+    }
+}
+
+class CustomHoeBuilder extends PickaxeItem {
+    public CustomHoeBuilder(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
+        super(material, attackDamage, attackSpeed, settings);
+    }
+}
+
+class CustomPickaxeBuilder extends PickaxeItem {
+    public CustomPickaxeBuilder(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
+        super(material, attackDamage, attackSpeed, settings);
+    }
+}
