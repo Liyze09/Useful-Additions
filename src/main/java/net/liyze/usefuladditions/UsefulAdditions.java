@@ -10,6 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import static net.liyze.usefuladditions.register.BlockRegister.registerBlocks;
+import static net.liyze.usefuladditions.register.EnchantmentRegister.registerEnchantments;
 import static net.liyze.usefuladditions.register.ItemRegister.registerItems;
 import static net.liyze.usefuladditions.register.RecipeRegister.registerRecipes;
 import static net.liyze.usefuladditions.register.WorldgenRegister.registerFeatures;
@@ -26,6 +27,7 @@ public class UsefulAdditions implements ModInitializer {
         registerItems();
         registerBlocks();
         registerRecipes();
+        registerEnchantments();
         registerFeatures();
     }
 

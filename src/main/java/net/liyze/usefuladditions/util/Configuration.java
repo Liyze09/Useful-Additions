@@ -24,6 +24,7 @@ public final class Configuration {
     private boolean enableCopperArmors = true;
     private boolean enableIceTools = true;
     private boolean enableQuartzite = true;
+    private boolean enableUniqueEnchantment = true;
 
     public Configuration() {
     }
@@ -76,5 +77,9 @@ public final class Configuration {
 
     public boolean isEnableQuartzite() {
         return enableQuartzite;
+    }
+
+    public boolean isEnableUniqueEnchantment() {
+        return enableUniqueEnchantment;
     }
 }
