@@ -32,6 +32,7 @@ public class UsefulAdditions implements ModInitializer {
         registerRecipes();
         registerEnchantments();
         registerFeatures();
+        LOGGER.info("Loaded all enabled features.");
     }
 
     private void loadConfiguration() {

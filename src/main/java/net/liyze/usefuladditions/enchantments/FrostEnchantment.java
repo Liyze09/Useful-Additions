@@ -28,8 +28,8 @@ public class FrostEnchantment extends Enchantment {
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if (target instanceof LivingEntity) {
-            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, level * 2 + random.nextInt(2), level + 4 + random.nextInt(1)));
-            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, level + random.nextInt(1), level + random.nextInt(1)));
+            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, level + random.nextInt(1), level + 4 + random.nextInt(1)));
+            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, level * 2 + random.nextInt(2), level + random.nextInt(1)));
             ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, level * 2 + random.nextInt(2), 1));
             ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.MINING_FATIGUE, level * 2 + random.nextInt(2), level + random.nextInt(1)));
             ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, level + random.nextInt(1), 0));
