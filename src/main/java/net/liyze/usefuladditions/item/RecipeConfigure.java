@@ -254,10 +254,9 @@ public class RecipeConfigure {
         }
         if (CONFIG.isEnableQuartzite()) {
             QUARTZITE_SCRAP_RECIPE = createCookRecipeJson("blasting", Lists.newArrayList(
-                    new Identifier(ID, "quartzite")
-            ), Lists.newArrayList(
-                    "item"
-            ), new Identifier(ID, "quartzite_scrap"), 1, 15);
+                            new Identifier(ID, "quartzite")
+                    ), Lists.newArrayList("item"),
+                    new Identifier(ID, "quartzite_scrap"), 1, 10);
         }
     }
 

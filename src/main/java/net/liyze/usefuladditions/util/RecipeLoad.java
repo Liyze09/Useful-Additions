@@ -110,7 +110,7 @@ public class RecipeLoad {
             individualItems.addProperty(type.get(i), inputs.get(i).toString());
             jsonArray.add(individualItems);
         }
-        json.add("ingredients", jsonArray);
+        json.add("ingredient", jsonArray);
 
         json.addProperty("result", result.toString());
         json.addProperty("experience", exp);
