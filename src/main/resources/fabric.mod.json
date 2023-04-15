@@ -8,7 +8,9 @@
     "Liyze","Perry"
   ],
   "contact": {
-    "sources": "https://github.com/Liyze09/Useful-Additions"
+    "sources": "https://github.com/Liyze09/Useful-Additions",
+    "issues": "https://github.com/Liyze09/Useful-Additions/issues",
+    "email": "a52990419@outlook.com"
   },
   "license": "MIT License",
   "icon": "assets/useful_additions/icon.png",
