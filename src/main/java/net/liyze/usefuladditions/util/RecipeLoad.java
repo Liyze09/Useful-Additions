@@ -25,7 +25,7 @@ public class RecipeLoad {
             JsonObject keyList = new JsonObject();
             for (int i = 0; i < keys.size(); ++i) {
                 individualKey = new JsonObject();
-                individualKey.addProperty(String.valueOf(type.get(i)), items.get(i).toString());
+                individualKey.addProperty(type.get(i), items.get(i).toString());
                 keyList.add(String.valueOf(keys.get(i)), individualKey);
             }
             json.add("key", keyList);
@@ -53,7 +53,7 @@ public class RecipeLoad {
             JsonObject individualItems;
             for (int i = 0; i < inputs.size(); ++i) {
                 individualItems = new JsonObject();
-                individualItems.addProperty(String.valueOf(type.get(i)), String.valueOf(inputs.get(i)));
+                individualItems.addProperty(type.get(i), inputs.get(i).toString());
                 jsonArray.add(individualItems);
             }
             json.add("ingredients", jsonArray);
@@ -80,7 +80,7 @@ public class RecipeLoad {
             JsonObject individualItems;
             for (int i = 0; i < inputs.size(); ++i) {
                 individualItems = new JsonObject();
-                individualItems.addProperty(String.valueOf(type.get(i)), String.valueOf(inputs.get(i)));
+                individualItems.addProperty(type.get(i), inputs.get(i).toString());
                 for (int j = 0; j < count.get(i); ++j)
                     jsonArray.add(individualItems);
             }
@@ -97,5 +97,24 @@ public class RecipeLoad {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public static JsonObject createCookRecipeJson(String recipe_type, ArrayList<Identifier> inputs, ArrayList<String> type, Identifier result, float exp, int time) {
+        JsonObject json = new JsonObject();
+        json.addProperty("type", "minecraft:" + recipe_type);
+
+        JsonArray jsonArray = new JsonArray();
+        JsonObject individualItems;
+        for (int i = 0; i < inputs.size(); ++i) {
+            individualItems = new JsonObject();
+            individualItems.addProperty(type.get(i), inputs.get(i).toString());
+            jsonArray.add(individualItems);
+        }
+        json.add("ingredients", jsonArray);
+
+        json.addProperty("result", result.toString());
+        json.addProperty("experience", exp);
+        json.addProperty("cookingtime", time);
+        return json;
     }
 }

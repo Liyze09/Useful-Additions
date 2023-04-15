@@ -14,7 +14,7 @@ import java.util.Map;
 
 import static net.liyze.usefuladditions.UsefulAdditions.CONFIG;
 import static net.liyze.usefuladditions.UsefulAdditions.ID;
-import static net.liyze.usefuladditions.item.RecipeRegister.*;
+import static net.liyze.usefuladditions.item.RecipeConfigure.*;
 
 @Mixin(RecipeManager.class)
 public abstract class RecipeManagerMixin {

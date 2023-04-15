@@ -14,7 +14,7 @@ import java.util.Random;
 import static net.liyze.usefuladditions.block.BlockRegister.registerBlocks;
 import static net.liyze.usefuladditions.enchantments.EnchantmentRegister.registerEnchantments;
 import static net.liyze.usefuladditions.item.ItemRegister.registerItems;
-import static net.liyze.usefuladditions.item.RecipeRegister.registerRecipes;
+import static net.liyze.usefuladditions.item.RecipeConfigure.registerRecipes;
 import static net.liyze.usefuladditions.worldgen.WorldgenRegister.registerFeatures;
 
 public class UsefulAdditions implements ModInitializer {
@@ -32,6 +32,7 @@ public class UsefulAdditions implements ModInitializer {
         registerRecipes();
         registerEnchantments();
         registerFeatures();
+        System.gc();
         LOGGER.info("Loaded all enabled features.");
     }
 

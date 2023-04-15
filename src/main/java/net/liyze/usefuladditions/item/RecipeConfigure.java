@@ -8,7 +8,7 @@ import static net.liyze.usefuladditions.UsefulAdditions.CONFIG;
 import static net.liyze.usefuladditions.UsefulAdditions.ID;
 import static net.liyze.usefuladditions.util.RecipeLoad.*;
 
-public class RecipeRegister {
+public class RecipeConfigure {
 
     public static void registerRecipes() {
         if (CONFIG.isEnableCopperTools()) {
@@ -153,104 +153,104 @@ public class RecipeRegister {
                     ),
                     new Identifier("useful_additions", "ice_shovel"), 1
             );
-            if (CONFIG.isEnableMiniIngots()) {
-                MINI_GOLD_INGOT_RECIPE = createShapelessRecipeJson(
-                        Lists.newArrayList(
-                                new Identifier("minecraft", "gold_nugget"),
-                                new Identifier("minecraft", "gold_nugget"),
-                                new Identifier("minecraft", "gold_nugget")
-                        ),
-                        Lists.newArrayList("item", "item", "item"),
-                        new Identifier(ID, "mini_gold_ingot"), 1
-                );
-                MINI_IRON_INGOT_RECIPE = createShapelessRecipeJson(
-                        Lists.newArrayList(
-                                new Identifier("minecraft", "iron_nugget"),
-                                new Identifier("minecraft", "iron_nugget"),
-                                new Identifier("minecraft", "iron_nugget")
-                        ),
-                        Lists.newArrayList("item", "item", "item"),
-                        new Identifier(ID, "mini_iron_ingot"), 1
-                );
-                MINI_LAPIS_BLOCK_RECIPE = createShapelessRecipeJson(
-                        Lists.newArrayList(
-                                new Identifier("minecraft", "lapis_lazuli"),
-                                new Identifier("minecraft", "lapis_lazuli"),
-                                new Identifier("minecraft", "lapis_lazuli")
-                        ),
-                        Lists.newArrayList("item", "item", "item"),
-                        new Identifier(ID, "mini_lapis_block"), 1
-                );
-                MINI_REDSTONE_BLOCK_RECIPE = createShapelessRecipeJson(
-                        Lists.newArrayList(
-                                new Identifier("minecraft", "redstone"),
-                                new Identifier("minecraft", "redstone"),
-                                new Identifier("minecraft", "redstone")
-                        ),
-                        Lists.newArrayList("item", "item", "item"),
-                        new Identifier(ID, "mini_redstone_block"), 1
-                );
+        }
+        if (CONFIG.isEnableMiniIngots()) {
+            MINI_GOLD_INGOT_RECIPE = createShapelessRecipeJson(
+                    Lists.newArrayList(
+                            new Identifier("minecraft", "gold_nugget"),
+                            new Identifier("minecraft", "gold_nugget"),
+                            new Identifier("minecraft", "gold_nugget")
+                    ),
+                    Lists.newArrayList("item", "item", "item"),
+                    new Identifier(ID, "mini_gold_ingot"), 1
+            );
+            MINI_IRON_INGOT_RECIPE = createShapelessRecipeJson(
+                    Lists.newArrayList(
+                            new Identifier("minecraft", "iron_nugget"),
+                            new Identifier("minecraft", "iron_nugget"),
+                            new Identifier("minecraft", "iron_nugget")
+                    ),
+                    Lists.newArrayList("item", "item", "item"),
+                    new Identifier(ID, "mini_iron_ingot"), 1
+            );
+            MINI_LAPIS_BLOCK_RECIPE = createShapelessRecipeJson(
+                    Lists.newArrayList(
+                            new Identifier("minecraft", "lapis_lazuli"),
+                            new Identifier("minecraft", "lapis_lazuli"),
+                            new Identifier("minecraft", "lapis_lazuli")
+                    ),
+                    Lists.newArrayList("item", "item", "item"),
+                    new Identifier(ID, "mini_lapis_block"), 1
+            );
+            MINI_REDSTONE_BLOCK_RECIPE = createShapelessRecipeJson(
+                    Lists.newArrayList(
+                            new Identifier("minecraft", "redstone"),
+                            new Identifier("minecraft", "redstone"),
+                            new Identifier("minecraft", "redstone")
+                    ),
+                    Lists.newArrayList("item", "item", "item"),
+                    new Identifier(ID, "mini_redstone_block"), 1
+            );
 
-                GOLD_INGOT_A_RECIPE = createStackRecipeJson(
-                        Lists.newArrayList(
-                                new Identifier(ID, "mini_gold_ingot")),
-                        Lists.newArrayList(9),
-                        Lists.newArrayList("item"),
-                        new Identifier("minecraft", "gold_ingot"), 3
-                );
-                GOLD_INGOT_B_RECIPE = createStackRecipeJson(
-                        Lists.newArrayList(
-                                new Identifier(ID, "mini_gold_ingot")),
-                        Lists.newArrayList(6),
-                        Lists.newArrayList("item"),
-                        new Identifier("minecraft", "gold_ingot"), 2
-                );
+            GOLD_INGOT_A_RECIPE = createStackRecipeJson(
+                    Lists.newArrayList(
+                            new Identifier(ID, "mini_gold_ingot")),
+                    Lists.newArrayList(9),
+                    Lists.newArrayList("item"),
+                    new Identifier("minecraft", "gold_ingot"), 3
+            );
+            GOLD_INGOT_B_RECIPE = createStackRecipeJson(
+                    Lists.newArrayList(
+                            new Identifier(ID, "mini_gold_ingot")),
+                    Lists.newArrayList(6),
+                    Lists.newArrayList("item"),
+                    new Identifier("minecraft", "gold_ingot"), 2
+            );
 
-                IRON_INGOT_A_RECIPE = createStackRecipeJson(
-                        Lists.newArrayList(
-                                new Identifier(ID, "mini_iron_ingot")),
-                        Lists.newArrayList(9),
-                        Lists.newArrayList("item"),
-                        new Identifier("minecraft", "iron_ingot"), 3
-                );
-                IRON_INGOT_B_RECIPE = createStackRecipeJson(
-                        Lists.newArrayList(
-                                new Identifier(ID, "mini_iron_ingot")),
-                        Lists.newArrayList(6),
-                        Lists.newArrayList("item"),
-                        new Identifier("minecraft", "iron_ingot"), 2
-                );
+            IRON_INGOT_A_RECIPE = createStackRecipeJson(
+                    Lists.newArrayList(
+                            new Identifier(ID, "mini_iron_ingot")),
+                    Lists.newArrayList(9),
+                    Lists.newArrayList("item"),
+                    new Identifier("minecraft", "iron_ingot"), 3
+            );
+            IRON_INGOT_B_RECIPE = createStackRecipeJson(
+                    Lists.newArrayList(
+                            new Identifier(ID, "mini_iron_ingot")),
+                    Lists.newArrayList(6),
+                    Lists.newArrayList("item"),
+                    new Identifier("minecraft", "iron_ingot"), 2
+            );
 
-                REDSTONE_BLOCK_A_RECIPE = createStackRecipeJson(
-                        Lists.newArrayList(
-                                new Identifier(ID, "mini_lapis_block")),
-                        Lists.newArrayList(9),
-                        Lists.newArrayList("item"),
-                        new Identifier("minecraft", "lapis_block"), 3
-                );
-                REDSTONE_BLOCK_B_RECIPE = createStackRecipeJson(
-                        Lists.newArrayList(
-                                new Identifier(ID, "mini_redstone_block")),
-                        Lists.newArrayList(6),
-                        Lists.newArrayList("item"),
-                        new Identifier("minecraft", "redstone_block"), 2
-                );
-                LAPIS_BLOCK_A_RECIPE = createStackRecipeJson(
-                        Lists.newArrayList(
-                                new Identifier(ID, "mini_lapis_block")),
-                        Lists.newArrayList(9),
-                        Lists.newArrayList("item"),
-                        new Identifier("minecraft", "lapis_block"), 3
-                );
-                LAPIS_BLOCK_B_RECIPE = createStackRecipeJson(
-                        Lists.newArrayList(
-                                new Identifier(ID, "mini_lapis_block")
-                        ),
-                        Lists.newArrayList(6),
-                        Lists.newArrayList("item"),
-                        new Identifier("minecraft", "lapis_block"), 2
-                );
-            }
+            REDSTONE_BLOCK_A_RECIPE = createStackRecipeJson(
+                    Lists.newArrayList(
+                            new Identifier(ID, "mini_lapis_block")),
+                    Lists.newArrayList(9),
+                    Lists.newArrayList("item"),
+                    new Identifier("minecraft", "lapis_block"), 3
+            );
+            REDSTONE_BLOCK_B_RECIPE = createStackRecipeJson(
+                    Lists.newArrayList(
+                            new Identifier(ID, "mini_redstone_block")),
+                    Lists.newArrayList(6),
+                    Lists.newArrayList("item"),
+                    new Identifier("minecraft", "redstone_block"), 2
+            );
+            LAPIS_BLOCK_A_RECIPE = createStackRecipeJson(
+                    Lists.newArrayList(
+                            new Identifier(ID, "mini_lapis_block")),
+                    Lists.newArrayList(9),
+                    Lists.newArrayList("item"),
+                    new Identifier("minecraft", "lapis_block"), 3
+            );
+            LAPIS_BLOCK_B_RECIPE = createStackRecipeJson(
+                    Lists.newArrayList(
+                            new Identifier(ID, "mini_lapis_block")
+                    ),
+                    Lists.newArrayList(6),
+                    Lists.newArrayList("item"),
+                    new Identifier("minecraft", "lapis_block"), 2
+            );
         }
     }
 
