@@ -31,6 +31,7 @@ public class ItemsConfiguration {
     public static final ToolItem ICE_AXE = new CustomAxeBuilder(CopperToolMaterial.INSTANCE, 14, -2.9F, new FabricItemSettings().group(ITEM_GROUP));
     public static final ToolItem ICE_SHOVEL = new CustomHoeBuilder(CopperToolMaterial.INSTANCE, 9, -3, new FabricItemSettings().group(ITEM_GROUP));
     public static final ToolItem ICE_HOE = new ShovelItem(CopperToolMaterial.INSTANCE, 2, -0.5F, new FabricItemSettings().group(ITEM_GROUP));
+    public static final Item QUARTZITE_SCRAP = new Item(new FabricItemSettings().group(ITEM_GROUP));
 }
 
 class CustomAxeBuilder extends PickaxeItem {

@@ -252,6 +252,10 @@ public class RecipeConfigure {
                     new Identifier("minecraft", "lapis_block"), 2
             );
         }
+        if (CONFIG.isEnableQuartzite()) {
+            QUARTZITE_SCRAP_RECIPE = null;
+            //TODO:Finish the recipe
+        }
     }
 
     public static JsonObject COPPER_PICKAXE_RECIPE = null;
@@ -276,4 +280,5 @@ public class RecipeConfigure {
     public static JsonObject LAPIS_BLOCK_B_RECIPE = null;
     public static JsonObject REDSTONE_BLOCK_A_RECIPE = null;
     public static JsonObject REDSTONE_BLOCK_B_RECIPE = null;
+    public static JsonObject QUARTZITE_SCRAP_RECIPE = null;
 }

@@ -35,5 +35,8 @@ public class ItemRegister {
             Registry.register(Registry.ITEM, new Identifier(ID, "ice_axe"), ICE_AXE);
             Registry.register(Registry.ITEM, new Identifier(ID, "ice_hoe"), ICE_HOE);
         }
+        if (CONFIG.isEnableQuartzite()) {
+            Registry.register(Registry.ITEM, new Identifier(ID, "quartzite_scrap"), QUARTZITE_SCRAP);
+        }
     }
 }
