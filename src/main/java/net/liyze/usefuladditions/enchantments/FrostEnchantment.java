@@ -12,7 +12,7 @@ import static net.liyze.usefuladditions.UsefulAdditions.random;
 
 public class FrostEnchantment extends Enchantment {
     public FrostEnchantment() {
-        super(Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
+        super(Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND,EquipmentSlot.OFFHAND});
     }
 
     @Override
