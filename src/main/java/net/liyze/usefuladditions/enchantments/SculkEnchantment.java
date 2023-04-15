@@ -11,21 +11,25 @@ import net.minecraft.entity.player.PlayerEntity;
 
 public class SculkEnchantment extends Enchantment {
     public SculkEnchantment() {
-        super(Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.OFFHAND,EquipmentSlot.MAINHAND});
+        super(Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.OFFHAND, EquipmentSlot.MAINHAND});
     }
+
     @Override
     public int getMinPower(int level) {
         return 1;
     }
+
     @Override
     public int getMaxLevel() {
         return 3;
     }
+
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
-        if(target instanceof PlayerEntity) {
-            ((PlayerEntity) target).addExperience(level*-2);
-        }if(target instanceof LivingEntity) {
+        if (target instanceof PlayerEntity && ((PlayerEntity) target).experienceProgress > 2) {
+            ((PlayerEntity) target).addExperience(level * -1);
+        }
+        if (target instanceof LivingEntity) {
             ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 4 * level, 1));
         }
 

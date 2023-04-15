@@ -9,6 +9,8 @@ import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Random;
+
 import static net.liyze.usefuladditions.register.BlockRegister.registerBlocks;
 import static net.liyze.usefuladditions.register.EnchantmentRegister.registerEnchantments;
 import static net.liyze.usefuladditions.register.ItemRegister.registerItems;
@@ -21,6 +23,7 @@ public class UsefulAdditions implements ModInitializer {
             () -> new ItemStack(net.minecraft.item.Items.BUCKET));
     public static Configuration CONFIG = new Configuration();
     public static final Logger LOGGER = LoggerFactory.getLogger("Useful Additions");
+    public static Random random = new Random();
 
     public void onInitialize() {
         loadConfiguration();
