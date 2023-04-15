@@ -40,6 +40,8 @@ class ModelGen extends FabricModelProvider {
         itemModelGenerator.register(ICE_HOE, HANDHELD);
         itemModelGenerator.register(ICE_SHOVEL, HANDHELD);
         itemModelGenerator.register(ICE_SWORD, HANDHELD);
+
+        itemModelGenerator.register(QUARTZITE_SCRAP,GENERATED);
     }
 
     public ModelGen(FabricDataGenerator generator) {

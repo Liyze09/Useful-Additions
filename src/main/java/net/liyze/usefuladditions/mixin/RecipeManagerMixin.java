@@ -20,7 +20,6 @@ import static net.liyze.usefuladditions.item.RecipeConfigure.*;
 public abstract class RecipeManagerMixin {
     @Inject(method = "apply*", at = @At("HEAD"))
     public void interceptApply(Map<Identifier, JsonElement> map, ResourceManager resourceManager, Profiler profiler, CallbackInfo info) {
-        /*Shaped Crafting Recipes*/
         if (CONFIG.isEnableCopperTools()) {
             map.put(new Identifier(ID, "copper_pickaxe"), COPPER_PICKAXE_RECIPE);
             map.put(new Identifier(ID, "copper_hoe"), COPPER_HOE_RECIPE);
@@ -48,6 +47,9 @@ public abstract class RecipeManagerMixin {
             map.put(new Identifier(ID, "lapis_block_b"), LAPIS_BLOCK_B_RECIPE);
             map.put(new Identifier(ID, "redstone_block_a"), REDSTONE_BLOCK_A_RECIPE);
             map.put(new Identifier(ID, "redstone_block_b"), REDSTONE_BLOCK_B_RECIPE);
+        }
+        if (CONFIG.isEnableQuartzite()) {
+            map.put(new Identifier(ID, "quartzite"), QUARTZITE_SCRAP_RECIPE);
         }
     }
 }

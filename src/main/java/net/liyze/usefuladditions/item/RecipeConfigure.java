@@ -253,8 +253,11 @@ public class RecipeConfigure {
             );
         }
         if (CONFIG.isEnableQuartzite()) {
-            QUARTZITE_SCRAP_RECIPE = null;
-            //TODO:Finish the recipe
+            QUARTZITE_SCRAP_RECIPE = createCookRecipeJson("blasting", Lists.newArrayList(
+                    new Identifier(ID, "quartzite")
+            ), Lists.newArrayList(
+                    "item"
+            ), new Identifier(ID, "quartzite_scrap"), 1, 15);
         }
     }
 
