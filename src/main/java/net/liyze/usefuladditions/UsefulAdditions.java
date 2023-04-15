@@ -11,11 +11,11 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Random;
 
-import static net.liyze.usefuladditions.register.BlockRegister.registerBlocks;
-import static net.liyze.usefuladditions.register.EnchantmentRegister.registerEnchantments;
-import static net.liyze.usefuladditions.register.ItemRegister.registerItems;
-import static net.liyze.usefuladditions.register.RecipeRegister.registerRecipes;
-import static net.liyze.usefuladditions.register.WorldgenRegister.registerFeatures;
+import static net.liyze.usefuladditions.block.BlockRegister.registerBlocks;
+import static net.liyze.usefuladditions.enchantments.EnchantmentRegister.registerEnchantments;
+import static net.liyze.usefuladditions.item.ItemRegister.registerItems;
+import static net.liyze.usefuladditions.item.RecipeRegister.registerRecipes;
+import static net.liyze.usefuladditions.worldgen.WorldgenRegister.registerFeatures;
 
 public class UsefulAdditions implements ModInitializer {
     public static final String ID = "useful_additions";

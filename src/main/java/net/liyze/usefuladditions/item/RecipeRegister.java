@@ -1,4 +1,4 @@
-package net.liyze.usefuladditions.register;
+package net.liyze.usefuladditions.item;
 
 import com.google.common.collect.Lists;
 import com.google.gson.JsonObject;

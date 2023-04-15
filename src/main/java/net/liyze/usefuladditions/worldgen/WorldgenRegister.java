@@ -1,4 +1,4 @@
-package net.liyze.usefuladditions.register;
+package net.liyze.usefuladditions.worldgen;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
@@ -10,8 +10,8 @@ import net.minecraft.world.gen.GenerationStep;
 
 import static net.liyze.usefuladditions.UsefulAdditions.CONFIG;
 import static net.liyze.usefuladditions.UsefulAdditions.ID;
-import static net.liyze.usefuladditions.block.WorldgenConfiguration.OVERWORLD_QUARTZITE_CONFIGURED_FEATURE;
-import static net.liyze.usefuladditions.block.WorldgenConfiguration.OVERWORLD_QUARTZITE_PLACED_FEATURE;
+import static net.liyze.usefuladditions.worldgen.WorldgenConfiguration.OVERWORLD_QUARTZITE_CONFIGURED_FEATURE;
+import static net.liyze.usefuladditions.worldgen.WorldgenConfiguration.OVERWORLD_QUARTZITE_PLACED_FEATURE;
 
 
 public class WorldgenRegister {

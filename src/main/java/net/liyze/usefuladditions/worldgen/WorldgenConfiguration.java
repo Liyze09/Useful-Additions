@@ -1,4 +1,4 @@
-package net.liyze.usefuladditions.block;
+package net.liyze.usefuladditions.worldgen;
 
 import net.minecraft.block.Blocks;
 import net.minecraft.util.registry.RegistryEntry;

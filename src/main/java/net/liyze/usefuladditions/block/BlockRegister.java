@@ -1,4 +1,4 @@
-package net.liyze.usefuladditions.register;
+package net.liyze.usefuladditions.block;
 
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
