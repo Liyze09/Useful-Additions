@@ -14,7 +14,7 @@ import java.util.Map;
 
 import static net.liyze.usefuladditions.UsefulAdditions.CONFIG;
 import static net.liyze.usefuladditions.UsefulAdditions.ID;
-import static net.liyze.usefuladditions.item.RecipeConfigure.*;
+import static net.liyze.usefuladditions.item.RecipeConfiguration.*;
 
 @Mixin(RecipeManager.class)
 public abstract class RecipeManagerMixin {
@@ -50,6 +50,7 @@ public abstract class RecipeManagerMixin {
         }
         if (CONFIG.isEnableQuartzite()) {
             map.put(new Identifier(ID, "quartzite"), QUARTZITE_SCRAP_RECIPE);
+            map.put(new Identifier(ID, "vanillia_quartz"), VANILLA_QUARTZITE_RECIPE);
         }
     }
 }

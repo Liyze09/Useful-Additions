@@ -8,7 +8,7 @@ import static net.liyze.usefuladditions.UsefulAdditions.CONFIG;
 import static net.liyze.usefuladditions.UsefulAdditions.ID;
 import static net.liyze.usefuladditions.util.RecipeLoad.*;
 
-public class RecipeConfigure {
+public class RecipeConfiguration {
 
     public static void registerRecipes() {
         if (CONFIG.isEnableCopperTools()) {
@@ -257,6 +257,11 @@ public class RecipeConfigure {
                             new Identifier(ID, "quartzite")
                     ), Lists.newArrayList("item"),
                     new Identifier(ID, "quartzite_scrap"), 1, 10);
+            VANILLA_QUARTZITE_RECIPE = createStackRecipeJson(Lists.newArrayList(
+                            new Identifier(ID, "quartzite_scrap")),
+                    Lists.newArrayList(9),
+                    Lists.newArrayList("item"),
+                    new Identifier("minecraft", "quartz"), 1);
         }
     }
 
@@ -283,4 +288,5 @@ public class RecipeConfigure {
     public static JsonObject REDSTONE_BLOCK_A_RECIPE = null;
     public static JsonObject REDSTONE_BLOCK_B_RECIPE = null;
     public static JsonObject QUARTZITE_SCRAP_RECIPE = null;
+    public static JsonObject VANILLA_QUARTZITE_RECIPE = null;
 }
