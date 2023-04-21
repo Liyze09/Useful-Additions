@@ -1,5 +1,7 @@
 package net.liyze.usefuladditions.worldgen;
 
+import net.minecraft.block.Blocks;
+import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.*;
@@ -24,5 +26,19 @@ public class WorldgenConfiguration {
                     CountPlacementModifier.of(6),
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.fixed(-5), YOffset.fixed(128))
+            ));
+
+    public static ConfiguredFeature<?, ?> END_QUARTZITE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    new BlockMatchRuleTest(Blocks.END_STONE),
+                    QUARTZITE_BLOCK.getDefaultState(),
+                    16));
+
+    public static PlacedFeature END_QUARTZITE_PLACED_FEATURE = new PlacedFeature(
+            RegistryEntry.of(END_QUARTZITE_CONFIGURED_FEATURE),
+            Arrays.asList(
+                    CountPlacementModifier.of(8),
+                    SquarePlacementModifier.of(),
+                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())
             ));
 }
