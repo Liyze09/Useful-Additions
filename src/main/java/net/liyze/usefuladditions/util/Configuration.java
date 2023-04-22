@@ -41,6 +41,9 @@ public final class Configuration {
             reader = Files.newBufferedReader(CONFIG_FILE.toPath());
             configuration = (new GsonBuilder().setPrettyPrinting().create()).fromJson(reader, Configuration.class);
             reader.close();
+            if (CONFIG_FILE.delete()) {
+                save(configuration);
+            }
         } catch (IOException e) {
             LOGGER.error("Failed to load configuration file. Used default configuration.", e);
         }
