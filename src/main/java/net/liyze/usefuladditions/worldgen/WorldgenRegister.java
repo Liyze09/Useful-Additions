@@ -30,8 +30,19 @@ public class WorldgenRegister {
             BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
                     RegistryKey.of(Registry.PLACED_FEATURE_KEY,
                             new Identifier(ID, "end_quartzite")));
+
+        }
+        if (CONFIG.isEnableBigOre()) {
+            Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                    new Identifier(ID, "big_diamond"), OVERWORLD_BIG_DIAMOND_CONFIGURED_FEATURE);
+            Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(ID, "big_diamond"),
+                    OVERWORLD_BIG_DIAMOND_PLACED_FEATURE);
+            BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,
+                    RegistryKey.of(Registry.PLACED_FEATURE_KEY,
+                            new Identifier(ID, "big_diamond")));
         }
     }
 }
+
 
 

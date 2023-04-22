@@ -25,6 +25,7 @@ public final class Configuration {
     private boolean enableIceTools = true;
     private boolean enableQuartzite = true;
     private boolean enableUniqueEnchantment = true;
+    private boolean enableBigOre = true;
 
     public Configuration() {
     }
@@ -83,5 +84,9 @@ public final class Configuration {
 
     public boolean isEnableUniqueEnchantment() {
         return enableUniqueEnchantment;
+    }
+
+    public boolean isEnableBigOre() {
+        return enableBigOre;
     }
 }
