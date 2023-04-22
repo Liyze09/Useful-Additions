@@ -26,6 +26,7 @@ public class UsefulAdditions implements ModInitializer {
     public static Random random = new Random();
 
     public void onInitialize() {
+        LOGGER.info("Loading configuration");
         loadConfiguration();
         registerItems();
         registerBlocks();
