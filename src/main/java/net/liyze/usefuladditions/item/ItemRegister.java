@@ -7,7 +7,7 @@ import static net.liyze.usefuladditions.UsefulAdditions.CONFIG;
 import static net.liyze.usefuladditions.UsefulAdditions.ID;
 import static net.liyze.usefuladditions.item.ItemsConfiguration.*;
 
-public class ItemRegister {
+public abstract class ItemRegister {
     public static void registerItems() {
         if (CONFIG.isEnableMiniIngots()) {
             Registry.register(Registry.ITEM, new Identifier(ID, "mini_gold_ingot"), MINI_GOLD_INGOT);

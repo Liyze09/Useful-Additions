@@ -8,6 +8,5 @@ public class UsefulAdditionsDatagen implements DataGeneratorEntrypoint {
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
         fabricDataGenerator.addProvider(ModelGen::new);
         fabricDataGenerator.addProvider(TagGen::new);
-        fabricDataGenerator.addProvider(EnglishLanguageGen::new);
     }
 }

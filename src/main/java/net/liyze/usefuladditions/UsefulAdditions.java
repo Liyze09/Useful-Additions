@@ -8,13 +8,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import pers.solid.brrp.v1.api.RuntimeResourcePack;
 
 import java.util.Random;
 
 import static net.liyze.usefuladditions.block.BlockRegister.registerBlocks;
 import static net.liyze.usefuladditions.enchantments.EnchantmentRegister.registerEnchantments;
 import static net.liyze.usefuladditions.item.ItemRegister.registerItems;
-import static net.liyze.usefuladditions.item.RecipeConfiguration.registerRecipes;
+import static net.liyze.usefuladditions.resource.BRRP.registerRRP;
 import static net.liyze.usefuladditions.worldgen.WorldgenRegister.registerFeatures;
 
 public class UsefulAdditions implements ModInitializer {
@@ -23,6 +24,7 @@ public class UsefulAdditions implements ModInitializer {
             () -> new ItemStack(net.minecraft.item.Items.BUCKET));
     public static Configuration CONFIG = new Configuration();
     public static final Logger LOGGER = LoggerFactory.getLogger("Useful Additions");
+    public static final RuntimeResourcePack pack = RuntimeResourcePack.create(new Identifier(ID, "pack"));
     public static Random random = new Random();
 
     public void onInitialize() {
@@ -30,7 +32,7 @@ public class UsefulAdditions implements ModInitializer {
         loadConfiguration();
         registerItems();
         registerBlocks();
-        registerRecipes();
+        registerRRP();
         registerEnchantments();
         registerFeatures();
         System.gc();

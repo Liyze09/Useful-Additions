@@ -8,7 +8,7 @@ import static net.liyze.usefuladditions.UsefulAdditions.ID;
 import static net.liyze.usefuladditions.block.BlockItemsConfiguration.QUARTZITE_ITEM;
 import static net.liyze.usefuladditions.block.BlocksConfiguration.QUARTZITE_BLOCK;
 
-public class BlockRegister {
+public abstract class BlockRegister {
     public static void registerBlocks() {
         if (CONFIG.isEnableQuartzite()) {
             Registry.register(Registry.BLOCK, new Identifier(ID, "quartzite"), QUARTZITE_BLOCK);
