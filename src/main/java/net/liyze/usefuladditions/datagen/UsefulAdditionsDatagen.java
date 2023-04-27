@@ -7,6 +7,5 @@ public class UsefulAdditionsDatagen implements DataGeneratorEntrypoint {
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
         fabricDataGenerator.addProvider(ModelGen::new);
-        fabricDataGenerator.addProvider(TagGen::new);
     }
 }

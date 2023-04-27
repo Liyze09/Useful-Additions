@@ -9,7 +9,7 @@ import static net.liyze.usefuladditions.item.ItemsConfiguration.*;
 
 public abstract class Lang {
     @SuppressWarnings("UnstableApiUsage")
-    public static void enUSLang() {
+    public static void generateLang() {
         LanguageProvider enUS = LanguageProvider.create()
                 .add(ITEM_GROUP, "Useful Additions")
                 .add(MINI_GOLD_INGOT, "Mini Gold Ingot")
