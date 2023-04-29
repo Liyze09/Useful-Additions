@@ -12,7 +12,7 @@ public abstract class EnchantmentRegister {
     public static Enchantment FROST_ENCHANTMENT = new FrostEnchantment();
 
     public static void registerEnchantments() {
-        if (CONFIG.isEnableUniqueEnchantment()) {
+        if (config.enableUniqueEnchantment) {
             Registry.register(Registry.ENCHANTMENT, new Identifier(ID, "wither"), WITHER_ENCHANTMENT);
             Registry.register(Registry.ENCHANTMENT, new Identifier(ID, "shulk"), SHULK_ENCHANTMENT);
             Registry.register(Registry.ENCHANTMENT, new Identifier(ID, "frost"), FROST_ENCHANTMENT);

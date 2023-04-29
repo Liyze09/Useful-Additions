@@ -14,7 +14,7 @@ import static net.liyze.usefuladditions.worldgen.WorldgenConfiguration.*;
 
 public abstract class WorldgenRegister {
     public static void registerFeatures() {
-        if (CONFIG.isEnableQuartzite()) {
+        if (config.enableQuartzite) {
             Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
                     new Identifier(ID, "overworld_quartzite"), OVERWORLD_QUARTZITE_CONFIGURED_FEATURE);
             Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(ID, "overworld_quartzite"),
@@ -31,7 +31,7 @@ public abstract class WorldgenRegister {
                             new Identifier(ID, "end_quartzite")));
 
         }
-        if (CONFIG.isEnableBigOre()) {
+        if (config.enableBigOre) {
             Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
                     new Identifier(ID, "big_diamond"), OVERWORLD_BIG_DIAMOND_CONFIGURED_FEATURE);
             Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(ID, "big_diamond"),

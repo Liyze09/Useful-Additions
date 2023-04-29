@@ -4,8 +4,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import pers.solid.brrp.v1.tag.IdentifiedTagBuilder;
 
-import static net.liyze.usefuladditions.UsefulAdditions.CONFIG;
-import static net.liyze.usefuladditions.UsefulAdditions.pack;
+import static net.liyze.usefuladditions.UsefulAdditions.*;
 import static net.liyze.usefuladditions.item.ItemsConfiguration.*;
 
 public abstract class Tags {
@@ -15,7 +14,7 @@ public abstract class Tags {
         IdentifiedTagBuilder<Item> hoes = IdentifiedTagBuilder.createItem(new Identifier("fabric", "hoes"));
         IdentifiedTagBuilder<Item> shovels = IdentifiedTagBuilder.createItem(new Identifier("fabric", "shovels"));
         IdentifiedTagBuilder<Item> swords = IdentifiedTagBuilder.createItem(new Identifier("fabric", "swords"));
-        if (CONFIG.isEnableCopperTools()) {
+        if (config.enableCopperTools) {
             pickaxes = IdentifiedTagBuilder.createItem(new Identifier("fabric", "pickaxes"))
                     .add(COPPER_PICKAXE);
             axes = IdentifiedTagBuilder.createItem(new Identifier("fabric", "axes"))
@@ -27,7 +26,7 @@ public abstract class Tags {
             swords = IdentifiedTagBuilder.createItem(new Identifier("fabric", "swords"))
                     .add(COPPER_SWORD);
         }
-        if (CONFIG.isEnableIceTools()) {
+        if (config.enableIceTools) {
             pickaxes = IdentifiedTagBuilder.createItem(new Identifier("fabric", "pickaxes"))
                     .add(ICE_PICKAXE);
             axes = IdentifiedTagBuilder.createItem(new Identifier("fabric", "axes"))

@@ -24,7 +24,7 @@ public class UsefulAdditions implements ModInitializer {
     public static final String ID = "useful_additions";
     public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(new Identifier(ID, "main"),
             () -> new ItemStack(net.minecraft.item.Items.BUCKET));
-    public static ConfigBean CONFIG = new ConfigBean();
+    public static ConfigBean config = AutoConfig.getConfigHolder(ConfigBean.class).getConfig();
     public static final Logger LOGGER = LoggerFactory.getLogger("Useful Additions");
     public static final RuntimeResourcePack pack = RuntimeResourcePack.create(new Identifier(ID, "pack"));
     public static Random random = new Random();
