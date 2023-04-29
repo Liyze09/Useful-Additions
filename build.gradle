@@ -1,7 +1,7 @@
 //file:noinspection GroovyAssignabilityCheck
 //file:noinspection GroovyAccessibility
 plugins {
-    id 'fabric-loom' version '1.1-SNAPSHOT'
+    id 'fabric-loom' version "1.2-SNAPSHOT"
     id 'maven-publish'
 }
 
@@ -37,7 +37,7 @@ dependencies {
         exclude(group: "net.fabricmc.fabric-api")
     }
     modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}"
-    modImplementation "pers.solid:brrp-fabric:${project.brrp_version}"
+    modApi "pers.solid:brrp-fabric:${project.brrp_version}"
     // Uncomment the following line to enable the deprecated Fabric API modules.
     // These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
 

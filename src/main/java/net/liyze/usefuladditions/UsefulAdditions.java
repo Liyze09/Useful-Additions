@@ -1,8 +1,10 @@
 package net.liyze.usefuladditions;
 
+import me.shedaniel.autoconfig.AutoConfig;
+import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
-import net.liyze.usefuladditions.util.Configuration;
+import net.liyze.usefuladditions.configuration.ConfigBean;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -22,14 +24,13 @@ public class UsefulAdditions implements ModInitializer {
     public static final String ID = "useful_additions";
     public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(new Identifier(ID, "main"),
             () -> new ItemStack(net.minecraft.item.Items.BUCKET));
-    public static Configuration CONFIG = new Configuration();
+    public static ConfigBean CONFIG = new ConfigBean();
     public static final Logger LOGGER = LoggerFactory.getLogger("Useful Additions");
     public static final RuntimeResourcePack pack = RuntimeResourcePack.create(new Identifier(ID, "pack"));
     public static Random random = new Random();
 
     public void onInitialize() {
-        LOGGER.info("Loading configuration");
-        loadConfiguration();
+        AutoConfig.register(ConfigBean.class, GsonConfigSerializer::new);
         registerItems();
         registerBlocks();
         registerRRP();
@@ -39,7 +40,5 @@ public class UsefulAdditions implements ModInitializer {
         LOGGER.info("Loaded all enabled features.");
     }
 
-    private void loadConfiguration() {
-        CONFIG = Configuration.load();
-    }
+
 }

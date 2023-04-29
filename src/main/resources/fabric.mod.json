@@ -22,6 +22,9 @@
     ],
     "fabric-datagen": [
       "net.liyze.usefuladditions.datagen.UsefulAdditionsDatagen"
+    ],
+    "modmenu": [
+      "net.liyze.usefuladditions.configuration.ConfigScreen"
     ]
   },
   "depends": {

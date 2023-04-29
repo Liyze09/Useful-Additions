@@ -8,12 +8,11 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.world.gen.GenerationStep;
 
-import static net.liyze.usefuladditions.UsefulAdditions.CONFIG;
-import static net.liyze.usefuladditions.UsefulAdditions.ID;
+import static net.liyze.usefuladditions.UsefulAdditions.*;
 import static net.liyze.usefuladditions.worldgen.WorldgenConfiguration.*;
 
 
-public class WorldgenRegister {
+public abstract class WorldgenRegister {
     public static void registerFeatures() {
         if (CONFIG.isEnableQuartzite()) {
             Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,

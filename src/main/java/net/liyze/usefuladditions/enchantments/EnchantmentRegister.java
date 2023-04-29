@@ -4,10 +4,9 @@ import net.minecraft.enchantment.Enchantment;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-import static net.liyze.usefuladditions.UsefulAdditions.CONFIG;
-import static net.liyze.usefuladditions.UsefulAdditions.ID;
+import static net.liyze.usefuladditions.UsefulAdditions.*;
 
-public class EnchantmentRegister {
+public abstract class EnchantmentRegister {
     public static Enchantment WITHER_ENCHANTMENT = new WitherEnchantment();
     public static Enchantment SHULK_ENCHANTMENT = new SculkEnchantment();
     public static Enchantment FROST_ENCHANTMENT = new FrostEnchantment();
