@@ -19,15 +19,16 @@ public abstract class Lang {
                 .add(keyA + "enableCopperArmors", "Copper Armors")
                 .add(keyA + "enableIceTools", "Ice Tools")
                 .add(keyA + "enableQuartzite", "Quaritzite")
-                .add(keyA + "enableUniqueEnchantment", "UniqueEnchantment");
-        if (config.enableMiniIngots)
+                .add(keyA + "enableUniqueEnchantment", "UniqueEnchantment")
+                .add(keyA + "enableBigOre", "Big Ore");
+        if (cfg.enableMiniIngots)
             enUS
                     .add(MINI_GOLD_INGOT, "Mini Gold Ingot")
                     .add(MINI_IRON_INGOT, "Mini Iron Ingot")
                     .add(MINI_LAPIS_BLOCK, "Mini Lapis Block")
                     .add(MINI_REDSTONE_BLOCK, "Mini Redstone Block");
 
-        if (config.enableCopperTools)
+        if (cfg.enableCopperTools)
             enUS
                     .add(COPPER_AXE, "Copper Axe")
                     .add(COPPER_HOE, "Copper Hoe")
@@ -35,14 +36,14 @@ public abstract class Lang {
                     .add(COPPER_SWORD, "Copper Sword")
                     .add(COPPER_PICKAXE, "Copper Pickaxe");
 
-        if (config.enableCopperArmors)
+        if (cfg.enableCopperArmors)
             enUS
                     .add(COPPER_HELMET, "Copper Helmet")
                     .add(COPPER_CHESTPLATE, "Copper Chestplate")
                     .add(COPPER_LEGGINGS, "Copper Leggings")
                     .add(COPPER_BOOTS, "Copper Boots");
 
-        if (config.enableIceTools)
+        if (cfg.enableIceTools)
             enUS
                     .add(ICE_AXE, "Ice Axe")
                     .add(ICE_HOE, "Ice Hoe")
@@ -50,11 +51,11 @@ public abstract class Lang {
                     .add(ICE_SHOVEL, "Ice Shovel")
                     .add(ICE_SWORD, "Ice Sword");
 
-        if (config.enableQuartzite)
+        if (cfg.enableQuartzite)
             enUS
                     .add(QUARTZITE_ITEM, "Quartzite")
                     .add(QUARTZITE_SCRAP, "Quartzite Scrap");
-        if (config.enableUniqueEnchantment)
+        if (cfg.enableUniqueEnchantment)
             enUS
                     .add(FROST_ENCHANTMENT, "Frost")
                     .add(WITHER_ENCHANTMENT, "Wither")

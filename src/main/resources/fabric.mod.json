@@ -32,10 +32,10 @@
     "fabric-api": "*",
     "minecraft": "~1.19.2",
     "java": ">=17",
-    "brrp_v1": "*"
+    "brrp_v1": "*",
+    "cloth-config": "*"
   },
   "recommends": {
-    "modmenu": "*",
-    "cloth-config": "*"
+    "modmenu": "*"
   }
 }

@@ -5,7 +5,7 @@ import me.shedaniel.autoconfig.annotation.Config;
 
 import static net.liyze.usefuladditions.UsefulAdditions.ID;
 
-@SuppressWarnings({"FieldMayBeFinal", "FieldCanBeLocal", "unused"})
+@SuppressWarnings({"FieldMayBeFinal", "unused"})
 @Config(name = ID)
 public class ConfigBean implements ConfigData {
     public boolean enableMiniIngots = true;

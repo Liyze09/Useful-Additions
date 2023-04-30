@@ -14,7 +14,7 @@ public abstract class Tags {
         IdentifiedTagBuilder<Item> hoes = IdentifiedTagBuilder.createItem(new Identifier("fabric", "hoes"));
         IdentifiedTagBuilder<Item> shovels = IdentifiedTagBuilder.createItem(new Identifier("fabric", "shovels"));
         IdentifiedTagBuilder<Item> swords = IdentifiedTagBuilder.createItem(new Identifier("fabric", "swords"));
-        if (config.enableCopperTools) {
+        if (cfg.enableCopperTools) {
             pickaxes = IdentifiedTagBuilder.createItem(new Identifier("fabric", "pickaxes"))
                     .add(COPPER_PICKAXE);
             axes = IdentifiedTagBuilder.createItem(new Identifier("fabric", "axes"))
@@ -26,7 +26,7 @@ public abstract class Tags {
             swords = IdentifiedTagBuilder.createItem(new Identifier("fabric", "swords"))
                     .add(COPPER_SWORD);
         }
-        if (config.enableIceTools) {
+        if (cfg.enableIceTools) {
             pickaxes = IdentifiedTagBuilder.createItem(new Identifier("fabric", "pickaxes"))
                     .add(ICE_PICKAXE);
             axes = IdentifiedTagBuilder.createItem(new Identifier("fabric", "axes"))
