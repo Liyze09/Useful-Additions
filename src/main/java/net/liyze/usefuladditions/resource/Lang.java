@@ -8,9 +8,9 @@ import static net.liyze.usefuladditions.block.BlockItemsConfiguration.QUARTZITE_
 import static net.liyze.usefuladditions.enchantments.EnchantmentRegister.*;
 import static net.liyze.usefuladditions.item.ItemsConfiguration.*;
 
-public abstract class Lang {
+abstract class Lang {
     @SuppressWarnings("UnstableApiUsage")
-    public static void generateLang() {
+    static void generateLang() {
         String keyA = "text.autoconfig." + ID + ".option.";
         LanguageProvider enUS = LanguageProvider.create()
                 .add(ITEM_GROUP, "Useful Additions")
