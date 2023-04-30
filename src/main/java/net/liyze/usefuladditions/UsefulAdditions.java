@@ -42,6 +42,4 @@ public class UsefulAdditions implements ModInitializer {
         System.gc();
         LOGGER.info("Loaded all enabled features.");
     }
-
-
 }

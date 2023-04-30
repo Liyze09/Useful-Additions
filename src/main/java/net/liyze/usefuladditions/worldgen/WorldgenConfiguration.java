@@ -13,7 +13,7 @@ import java.util.Arrays;
 
 import static net.liyze.usefuladditions.block.BlocksConfiguration.QUARTZITE_BLOCK;
 
-public class WorldgenConfiguration {
+public abstract class WorldgenConfiguration {
     public static ConfiguredFeature<?, ?> OVERWORLD_QUARTZITE_CONFIGURED_FEATURE = new ConfiguredFeature<>
             (Feature.ORE, new OreFeatureConfig(
                     OreConfiguredFeatures.STONE_ORE_REPLACEABLES,

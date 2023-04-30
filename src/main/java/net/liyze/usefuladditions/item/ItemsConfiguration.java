@@ -6,7 +6,7 @@ import net.minecraft.item.*;
 
 import static net.liyze.usefuladditions.UsefulAdditions.ITEM_GROUP;
 
-public class ItemsConfiguration {
+public abstract class ItemsConfiguration {
 
     /*Mini Items*/
     public static final Item MINI_GOLD_INGOT = new Item(new FabricItemSettings().group(ITEM_GROUP));
