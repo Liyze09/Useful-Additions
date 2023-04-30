@@ -1,4 +1,4 @@
-// 1.19.2	2023-04-15T10:07:39.959186	Models
+// 1.19.2	2023-04-30T16:04:43.403587	Models
 cf8cf937c68b17c6657f2f8966ed4828aa41c95b assets/useful_additions/models/item/quartzite.json
 d4466817921b3b0f7dd1c7a63afe3bab0bebbf92 assets/useful_additions/models/item/ice_axe.json
 98b75d09e090d4d94c90b56e13cf0039b725a521 assets/useful_additions/models/item/ice_hoe.json
@@ -7,6 +7,7 @@ d4466817921b3b0f7dd1c7a63afe3bab0bebbf92 assets/useful_additions/models/item/ice
 20f4d82a3fe2aeb2c75499143c4ce00cf05bfa3e assets/useful_additions/models/item/copper_shovel.json
 0fe6437d7cb637559a2ac0094f50bd87a345dc2a assets/useful_additions/models/item/copper_leggings.json
 86057e18387455102c2eb5c45ba4b82c7a31146a assets/useful_additions/models/item/mini_lapis_block.json
+44f4efca5373f542ab2c3b93dae70fb305e55a7b assets/useful_additions/models/item/quartzite_scrap.json
 45b79d8d58cedd5f25dd07541615c67726276f27 assets/useful_additions/models/block/quartzite.json
 eba5b2a5889dafa2f6f15df1a80d78d2472326b5 assets/useful_additions/models/item/ice_shovel.json
 6a3297aae6a617e1572dafa2390ac95093a5a3b0 assets/useful_additions/models/item/copper_axe.json
