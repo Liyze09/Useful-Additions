@@ -4,22 +4,13 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 import static net.liyze.usefuladditions.UsefulAdditions.*;
-import static net.liyze.usefuladditions.api.register.Register.regItems;
 import static net.liyze.usefuladditions.features.CopperArmors.Items.*;
 import static net.liyze.usefuladditions.features.CopperTools.Items.*;
 import static net.liyze.usefuladditions.features.IceTools.Items.*;
-import static net.liyze.usefuladditions.features.MiniIngots.Items.*;
 import static net.liyze.usefuladditions.features.Quartzite.Items.QUARTZITE_SCRAP;
 
 public abstract class ItemRegister {
     public static void registerItems() {
-        regItems();
-        if (cfg.enableMiniIngots) {
-            Registry.register(Registry.ITEM, new Identifier(ID, "mini_gold_ingot"), MINI_GOLD_INGOT);
-            Registry.register(Registry.ITEM, new Identifier(ID, "mini_iron_ingot"), MINI_IRON_INGOT);
-            Registry.register(Registry.ITEM, new Identifier(ID, "mini_redstone_block"), MINI_REDSTONE_BLOCK);
-            Registry.register(Registry.ITEM, new Identifier(ID, "mini_lapis_block"), MINI_LAPIS_BLOCK);
-        }
         if (cfg.enableCopperTools) {
             Registry.register(Registry.ITEM, new Identifier(ID, "copper_sword"), COPPER_SWORD);
             Registry.register(Registry.ITEM, new Identifier(ID, "copper_shovel"), COPPER_SHOVEL);
