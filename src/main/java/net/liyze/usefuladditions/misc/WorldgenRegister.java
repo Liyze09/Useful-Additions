@@ -1,4 +1,4 @@
-package net.liyze.usefuladditions.register;
+package net.liyze.usefuladditions.misc;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;

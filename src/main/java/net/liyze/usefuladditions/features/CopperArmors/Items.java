@@ -1,7 +1,7 @@
 package net.liyze.usefuladditions.features.CopperArmors;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.liyze.usefuladditions.api.builders.UArmorItem;
+import net.liyze.uapi.builders.UArmorItem;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;

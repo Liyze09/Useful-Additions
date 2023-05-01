@@ -14,7 +14,7 @@ import pers.solid.brrp.v1.api.RuntimeResourcePack;
 
 import java.util.Random;
 
-import static net.liyze.usefuladditions.register.WorldgenRegister.registerFeatures;
+import static net.liyze.usefuladditions.misc.WorldgenRegister.registerFeatures;
 import static net.liyze.usefuladditions.resource.BRRP.registerRRP;
 
 public class UsefulAdditions implements ModInitializer {

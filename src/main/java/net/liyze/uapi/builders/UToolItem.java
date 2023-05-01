@@ -1,4 +1,4 @@
-package net.liyze.usefuladditions.api.builders;
+package net.liyze.uapi.builders;
 
 import net.minecraft.item.ToolItem;
 import net.minecraft.item.ToolMaterial;

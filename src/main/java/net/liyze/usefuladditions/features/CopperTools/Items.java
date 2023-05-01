@@ -1,7 +1,7 @@
 package net.liyze.usefuladditions.features.CopperTools;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.liyze.usefuladditions.api.builders.*;
+import net.liyze.uapi.builders.*;
 import net.minecraft.item.ToolItem;
 import net.minecraft.util.Identifier;
 
