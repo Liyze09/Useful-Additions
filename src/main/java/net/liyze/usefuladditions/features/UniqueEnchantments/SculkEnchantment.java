@@ -8,10 +8,15 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
+
+import static net.liyze.usefuladditions.UsefulAdditions.*;
 
 public class SculkEnchantment extends Enchantment {
     public SculkEnchantment() {
         super(Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.OFFHAND, EquipmentSlot.MAINHAND});
+        if (cfg.enableUniqueEnchantment) Registry.register(Registry.ENCHANTMENT, new Identifier(ID, "shulk"), this);
     }
 
     @Override

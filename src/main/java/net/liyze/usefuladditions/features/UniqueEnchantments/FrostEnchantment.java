@@ -7,12 +7,15 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
-import static net.liyze.usefuladditions.UsefulAdditions.random;
+import static net.liyze.usefuladditions.UsefulAdditions.*;
 
 public class FrostEnchantment extends Enchantment {
     public FrostEnchantment() {
         super(Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND});
+        if (cfg.enableUniqueEnchantment) Registry.register(Registry.ENCHANTMENT, new Identifier(ID, "frost"), this);
     }
 
     @Override

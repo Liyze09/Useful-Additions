@@ -10,7 +10,7 @@ import static net.liyze.usefuladditions.features.IceTools.Items.*;
 import static net.liyze.usefuladditions.features.MiniIngots.Items.*;
 import static net.liyze.usefuladditions.features.Quartzite.Blocks.QUARTZITE_BLOCK;
 import static net.liyze.usefuladditions.features.Quartzite.Items.QUARTZITE_SCRAP;
-import static net.liyze.usefuladditions.register.EnchantmentRegister.*;
+import static net.liyze.usefuladditions.features.UniqueEnchantments.EnchantmentInstance.*;
 
 abstract class Lang {
     @SuppressWarnings("UnstableApiUsage")

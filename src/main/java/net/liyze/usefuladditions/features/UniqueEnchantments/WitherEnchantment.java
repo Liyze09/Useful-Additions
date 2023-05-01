@@ -7,10 +7,15 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
+
+import static net.liyze.usefuladditions.UsefulAdditions.*;
 
 public class WitherEnchantment extends Enchantment {
     public WitherEnchantment() {
         super(Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
+        if (cfg.enableUniqueEnchantment) Registry.register(Registry.ENCHANTMENT, new Identifier(ID, "wither"), this);
     }
 
     @Override

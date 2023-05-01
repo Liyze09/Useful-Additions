@@ -7,7 +7,6 @@ import static net.liyze.usefuladditions.UsefulAdditions.*;
 import static net.liyze.usefuladditions.features.CopperArmors.Items.*;
 import static net.liyze.usefuladditions.features.CopperTools.Items.*;
 import static net.liyze.usefuladditions.features.IceTools.Items.*;
-import static net.liyze.usefuladditions.features.Quartzite.Items.QUARTZITE_SCRAP;
 
 public abstract class ItemRegister {
     public static void registerItems() {
@@ -30,9 +29,6 @@ public abstract class ItemRegister {
             Registry.register(Registry.ITEM, new Identifier(ID, "ice_pickaxe"), ICE_PICKAXE);
             Registry.register(Registry.ITEM, new Identifier(ID, "ice_axe"), ICE_AXE);
             Registry.register(Registry.ITEM, new Identifier(ID, "ice_hoe"), ICE_HOE);
-        }
-        if (cfg.enableQuartzite) {
-            Registry.register(Registry.ITEM, new Identifier(ID, "quartzite_scrap"), QUARTZITE_SCRAP);
         }
     }
 }
