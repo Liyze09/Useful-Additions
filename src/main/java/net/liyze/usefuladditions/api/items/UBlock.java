@@ -3,6 +3,7 @@ package net.liyze.usefuladditions.api.items;
 import net.minecraft.block.Block;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import org.jetbrains.annotations.NotNull;
 
 @SuppressWarnings("unused")
 public class UBlock extends Block {
@@ -10,7 +11,7 @@ public class UBlock extends Block {
         super(settings);
     }
 
-    public UBlock(Settings settings, Identifier identifier, Boolean isEnable) {
+    public UBlock(Settings settings, Identifier identifier, @NotNull Boolean isEnable) {
         super(settings);
         if (isEnable) Registry.register(Registry.BLOCK, identifier, this.asBlock());
     }

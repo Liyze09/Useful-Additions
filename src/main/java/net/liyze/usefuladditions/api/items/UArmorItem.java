@@ -5,6 +5,7 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import org.jetbrains.annotations.NotNull;
 
 @SuppressWarnings("unused")
 public class UArmorItem extends ArmorItem {
@@ -12,7 +13,7 @@ public class UArmorItem extends ArmorItem {
         super(material, slot, settings);
     }
 
-    public UArmorItem(ArmorMaterial material, EquipmentSlot slot, Settings settings, Identifier identifier, Boolean isEnable) {
+    public UArmorItem(ArmorMaterial material, EquipmentSlot slot, Settings settings, Identifier identifier, @NotNull Boolean isEnable) {
         super(material, slot, settings);
         if (isEnable) Registry.register(Registry.ITEM, identifier, this.asItem());
     }
