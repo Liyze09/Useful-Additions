@@ -1,9 +1,9 @@
 package net.liyze.usefuladditions.features.IceTools;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.liyze.usefuladditions.api.items.UAxeBuilder;
-import net.liyze.usefuladditions.api.items.UHoeBuilder;
-import net.liyze.usefuladditions.api.items.UPickaxeBuilder;
+import net.liyze.usefuladditions.api.builders.UAxeBuilder;
+import net.liyze.usefuladditions.api.builders.UHoeBuilder;
+import net.liyze.usefuladditions.api.builders.UPickaxeBuilder;
 import net.liyze.usefuladditions.features.CopperTools.CopperToolMaterial;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;

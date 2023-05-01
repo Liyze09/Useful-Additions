@@ -1,4 +1,4 @@
-package net.liyze.usefuladditions.api.items;
+package net.liyze.usefuladditions.api.builders;
 
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;

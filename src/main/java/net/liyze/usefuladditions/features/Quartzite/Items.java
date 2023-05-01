@@ -1,7 +1,7 @@
 package net.liyze.usefuladditions.features.Quartzite;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.liyze.usefuladditions.api.items.UItem;
+import net.liyze.usefuladditions.api.builders.UItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 
