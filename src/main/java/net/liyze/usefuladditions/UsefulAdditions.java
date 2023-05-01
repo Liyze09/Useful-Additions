@@ -14,7 +14,6 @@ import pers.solid.brrp.v1.api.RuntimeResourcePack;
 
 import java.util.Random;
 
-import static net.liyze.usefuladditions.register.ItemRegister.registerItems;
 import static net.liyze.usefuladditions.register.WorldgenRegister.registerFeatures;
 import static net.liyze.usefuladditions.resource.BRRP.registerRRP;
 
@@ -32,7 +31,6 @@ public class UsefulAdditions implements ModInitializer {
     public void onInitialize() {
         AutoConfig.register(ConfigBean.class, GsonConfigSerializer::new);
         cfg = AutoConfig.getConfigHolder(ConfigBean.class).getConfig();
-        registerItems();
         registerRRP();
         registerFeatures();
         System.gc();
