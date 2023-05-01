@@ -5,10 +5,13 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 
-import static net.liyze.usefuladditions.block.BlocksConfiguration.QUARTZITE_BLOCK;
-import static net.liyze.usefuladditions.item.ItemsConfiguration.*;
-import static net.minecraft.data.client.Models.GENERATED;
-import static net.minecraft.data.client.Models.HANDHELD;
+import static net.liyze.usefuladditions.features.CopperArmors.Items.*;
+import static net.liyze.usefuladditions.features.CopperTools.Items.*;
+import static net.liyze.usefuladditions.features.IceTools.Items.*;
+import static net.liyze.usefuladditions.features.MiniIngots.Items.*;
+import static net.liyze.usefuladditions.features.Quartzite.Blocks.QUARTZITE_BLOCK;
+import static net.liyze.usefuladditions.features.Quartzite.Items.QUARTZITE_SCRAP;
+import static net.minecraft.data.client.Models.*;
 
 class ModelGen extends FabricModelProvider {
     @Override

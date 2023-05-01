@@ -1,4 +1,4 @@
-package net.liyze.usefuladditions.worldgen;
+package net.liyze.usefuladditions.register;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
@@ -9,7 +9,8 @@ import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.world.gen.GenerationStep;
 
 import static net.liyze.usefuladditions.UsefulAdditions.*;
-import static net.liyze.usefuladditions.worldgen.WorldgenConfiguration.*;
+import static net.liyze.usefuladditions.features.BigOre.Worldgen.*;
+import static net.liyze.usefuladditions.features.Quartzite.WorldgenConfiguration.*;
 
 
 public abstract class WorldgenRegister {

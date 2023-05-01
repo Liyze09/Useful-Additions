@@ -1,4 +1,4 @@
-package net.liyze.usefuladditions.item;
+package net.liyze.usefuladditions.features.CopperArmors;
 
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;

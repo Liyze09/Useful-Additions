@@ -1,5 +1,8 @@
-package net.liyze.usefuladditions.enchantments;
+package net.liyze.usefuladditions.register;
 
+import net.liyze.usefuladditions.features.UniqueEnchantments.FrostEnchantment;
+import net.liyze.usefuladditions.features.UniqueEnchantments.SculkEnchantment;
+import net.liyze.usefuladditions.features.UniqueEnchantments.WitherEnchantment;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;

@@ -1,4 +1,4 @@
-package net.liyze.usefuladditions.enchantments;
+package net.liyze.usefuladditions.features.UniqueEnchantments;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;

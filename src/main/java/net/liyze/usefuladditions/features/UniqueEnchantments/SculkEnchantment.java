@@ -1,4 +1,4 @@
-package net.liyze.usefuladditions.enchantments;
+package net.liyze.usefuladditions.features.UniqueEnchantments;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
@@ -7,10 +7,11 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.player.PlayerEntity;
 
-public class WitherEnchantment extends Enchantment {
-    public WitherEnchantment() {
-        super(Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
+public class SculkEnchantment extends Enchantment {
+    public SculkEnchantment() {
+        super(Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.OFFHAND, EquipmentSlot.MAINHAND});
     }
 
     @Override
@@ -20,14 +21,18 @@ public class WitherEnchantment extends Enchantment {
 
     @Override
     public int getMaxLevel() {
-        return 2;
+        return 3;
     }
 
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
-        if (target instanceof LivingEntity) {
-            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, level * 2, 1));
+        if (target instanceof PlayerEntity && ((PlayerEntity) target).experienceProgress > 2) {
+            ((PlayerEntity) target).addExperience(level * -1);
         }
+        if (target instanceof LivingEntity) {
+            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 4 * level, 1));
+        }
+
         super.onTargetDamaged(user, target, level);
     }
 }

@@ -1,4 +1,4 @@
-package net.liyze.usefuladditions.worldgen;
+package net.liyze.usefuladditions.features.Quartzite;
 
 import net.minecraft.block.Blocks;
 import net.minecraft.structure.rule.BlockMatchRuleTest;
@@ -11,7 +11,7 @@ import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 
 import java.util.Arrays;
 
-import static net.liyze.usefuladditions.block.BlocksConfiguration.QUARTZITE_BLOCK;
+import static net.liyze.usefuladditions.features.Quartzite.Blocks.QUARTZITE_BLOCK;
 
 public abstract class WorldgenConfiguration {
     public static ConfiguredFeature<?, ?> OVERWORLD_QUARTZITE_CONFIGURED_FEATURE = new ConfiguredFeature<>
@@ -40,18 +40,5 @@ public abstract class WorldgenConfiguration {
                     CountPlacementModifier.of(8),
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())
-            ));
-    public static ConfiguredFeature<?, ?> OVERWORLD_BIG_DIAMOND_CONFIGURED_FEATURE = new ConfiguredFeature<>
-            (Feature.ORE, new OreFeatureConfig(
-                    OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
-                    Blocks.DEEPSLATE_DIAMOND_ORE.getDefaultState(),
-                    10));
-
-    public static PlacedFeature OVERWORLD_BIG_DIAMOND_PLACED_FEATURE = new PlacedFeature(
-            RegistryEntry.of(OVERWORLD_BIG_DIAMOND_CONFIGURED_FEATURE),
-            Arrays.asList(
-                    CountPlacementModifier.of(2),
-                    SquarePlacementModifier.of(),
-                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(5))
             ));
 }

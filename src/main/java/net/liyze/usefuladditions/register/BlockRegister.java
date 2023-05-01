@@ -1,11 +1,10 @@
-package net.liyze.usefuladditions.block;
+package net.liyze.usefuladditions.register;
 
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 import static net.liyze.usefuladditions.UsefulAdditions.*;
-import static net.liyze.usefuladditions.block.BlockItemsConfiguration.QUARTZITE_ITEM;
-import static net.liyze.usefuladditions.block.BlocksConfiguration.QUARTZITE_BLOCK;
+import static net.liyze.usefuladditions.features.Quartzite.Blocks.*;
 
 public abstract class BlockRegister {
     public static void registerBlocks() {

@@ -1,4 +1,4 @@
-package net.liyze.usefuladditions.item;
+package net.liyze.usefuladditions.features.IceTools;
 
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;

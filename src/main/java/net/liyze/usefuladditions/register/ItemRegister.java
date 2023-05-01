@@ -1,10 +1,14 @@
-package net.liyze.usefuladditions.item;
+package net.liyze.usefuladditions.register;
 
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 import static net.liyze.usefuladditions.UsefulAdditions.*;
-import static net.liyze.usefuladditions.item.ItemsConfiguration.*;
+import static net.liyze.usefuladditions.features.CopperArmors.Items.*;
+import static net.liyze.usefuladditions.features.CopperTools.Items.*;
+import static net.liyze.usefuladditions.features.IceTools.Items.*;
+import static net.liyze.usefuladditions.features.MiniIngots.Items.*;
+import static net.liyze.usefuladditions.features.Quartzite.Items.QUARTZITE_SCRAP;
 
 public abstract class ItemRegister {
     public static void registerItems() {

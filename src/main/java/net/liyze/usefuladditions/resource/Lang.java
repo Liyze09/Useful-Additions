@@ -4,9 +4,13 @@ import net.minecraft.util.Identifier;
 import pers.solid.brrp.v1.api.LanguageProvider;
 
 import static net.liyze.usefuladditions.UsefulAdditions.*;
-import static net.liyze.usefuladditions.block.BlocksConfiguration.QUARTZITE_BLOCK;
-import static net.liyze.usefuladditions.enchantments.EnchantmentRegister.*;
-import static net.liyze.usefuladditions.item.ItemsConfiguration.*;
+import static net.liyze.usefuladditions.features.CopperArmors.Items.*;
+import static net.liyze.usefuladditions.features.CopperTools.Items.*;
+import static net.liyze.usefuladditions.features.IceTools.Items.*;
+import static net.liyze.usefuladditions.features.MiniIngots.Items.*;
+import static net.liyze.usefuladditions.features.Quartzite.Blocks.QUARTZITE_BLOCK;
+import static net.liyze.usefuladditions.features.Quartzite.Items.QUARTZITE_SCRAP;
+import static net.liyze.usefuladditions.register.EnchantmentRegister.*;
 
 abstract class Lang {
     @SuppressWarnings("UnstableApiUsage")

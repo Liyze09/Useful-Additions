@@ -6,8 +6,9 @@ import net.minecraft.util.Identifier;
 import pers.solid.brrp.v1.tag.IdentifiedTagBuilder;
 
 import static net.liyze.usefuladditions.UsefulAdditions.*;
-import static net.liyze.usefuladditions.block.BlocksConfiguration.QUARTZITE_BLOCK;
-import static net.liyze.usefuladditions.item.ItemsConfiguration.*;
+import static net.liyze.usefuladditions.features.CopperTools.Items.*;
+import static net.liyze.usefuladditions.features.IceTools.Items.*;
+import static net.liyze.usefuladditions.features.Quartzite.Blocks.QUARTZITE_BLOCK;
 
 abstract class Tags {
     static void generateTags() {
