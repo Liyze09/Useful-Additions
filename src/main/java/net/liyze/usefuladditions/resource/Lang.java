@@ -76,14 +76,14 @@ abstract class Lang {
                 .add(keyA + "enableUniqueEnchantment", "独特附魔")
                 .add(keyA + "enableBigOre", "大型矿群");
         if (cfg.enableMiniIngots)
-            enUS
+            zhCN
                     .add(MINI_GOLD_INGOT, "Mini Gold Ingot")
                     .add(MINI_IRON_INGOT, "Mini Iron Ingot")
                     .add(MINI_LAPIS_BLOCK, "Mini Lapis Block")
                     .add(MINI_REDSTONE_BLOCK, "Mini Redstone Block");
 
         if (cfg.enableCopperTools)
-            enUS
+            zhCN
                     .add(COPPER_AXE, "Copper Axe")
                     .add(COPPER_HOE, "Copper Hoe")
                     .add(COPPER_SHOVEL, "Copper Shovel")
@@ -91,14 +91,14 @@ abstract class Lang {
                     .add(COPPER_PICKAXE, "Copper Pickaxe");
 
         if (cfg.enableCopperArmors)
-            enUS
+            zhCN
                     .add(COPPER_HELMET, "Copper Helmet")
                     .add(COPPER_CHESTPLATE, "Copper Chestplate")
                     .add(COPPER_LEGGINGS, "Copper Leggings")
                     .add(COPPER_BOOTS, "Copper Boots");
 
         if (cfg.enableIceTools)
-            enUS
+            zhCN
                     .add(ICE_AXE, "Ice Axe")
                     .add(ICE_HOE, "Ice Hoe")
                     .add(ICE_PICKAXE, "Ice Pickaxe")
@@ -106,11 +106,11 @@ abstract class Lang {
                     .add(ICE_SWORD, "Ice Sword");
 
         if (cfg.enableQuartzite)
-            enUS
+            zhCN
                     .add(QUARTZITE_BLOCK, "Quartzite")
                     .add(QUARTZITE_SCRAP, "Quartzite Scrap");
         if (cfg.enableUniqueEnchantment)
-            enUS
+            zhCN
                     .add(FROST_ENCHANTMENT, "Frost")
                     .add(WITHER_ENCHANTMENT, "Wither")
                     .add(SCULK_ENCHANTMENT, "Sculk");

@@ -8,6 +8,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 import static net.liyze.usefuladditions.UsefulAdditions.*;
+import static net.liyze.usefuladditions.api.register.Register.regEnchantments;
 
 public abstract class EnchantmentRegister {
     public static Enchantment WITHER_ENCHANTMENT = new WitherEnchantment();
@@ -15,6 +16,7 @@ public abstract class EnchantmentRegister {
     public static Enchantment FROST_ENCHANTMENT = new FrostEnchantment();
 
     public static void registerEnchantments() {
+        regEnchantments();
         if (cfg.enableUniqueEnchantment) {
             Registry.register(Registry.ENCHANTMENT, new Identifier(ID, "wither"), WITHER_ENCHANTMENT);
             Registry.register(Registry.ENCHANTMENT, new Identifier(ID, "shulk"), SCULK_ENCHANTMENT);
