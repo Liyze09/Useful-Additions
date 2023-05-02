@@ -15,5 +15,5 @@ public class ConfigBean implements ConfigData {
     public boolean enableQuartzite = true;
     public boolean enableUniqueEnchantment = true;
     public boolean enableBigOre = true;
-    public boolean enableSmartBlocks = true;
+    public boolean enableCoffee = true;
 }

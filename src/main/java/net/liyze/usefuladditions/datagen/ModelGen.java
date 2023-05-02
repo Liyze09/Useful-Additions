@@ -4,7 +4,9 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.state.property.Properties;
 
+import static net.liyze.usefuladditions.features.Coffee.Blocks.COFFEE_CROP_BLOCK;
 import static net.liyze.usefuladditions.features.CopperArmors.Items.*;
 import static net.liyze.usefuladditions.features.CopperTools.Items.*;
 import static net.liyze.usefuladditions.features.IceTools.Items.*;
@@ -17,6 +19,7 @@ class ModelGen extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(QUARTZITE_BLOCK);
+        blockStateModelGenerator.registerCrop(COFFEE_CROP_BLOCK, Properties.AGE_7, 0, 1, 2, 3, 4, 5, 6, 7);
     }
 
     @Override

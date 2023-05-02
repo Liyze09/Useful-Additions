@@ -25,6 +25,9 @@
     ],
     "modmenu": [
       "net.liyze.usefuladditions.configuration.ConfigScreen"
+    ],
+    "client": [
+      "net.liyze.usefuladditions.features.Coffee.CoffeeClient"
     ]
   },
   "depends": {

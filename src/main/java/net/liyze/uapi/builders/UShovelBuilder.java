@@ -12,7 +12,7 @@ public class UShovelBuilder extends ShovelItem {
         super(material, attackDamage, attackSpeed, settings);
     }
 
-    public UShovelBuilder(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings, Identifier identifier, @NotNull Boolean isEnable) {
+    public UShovelBuilder(ToolMaterial material, float attackDamage, float attackSpeed, Settings settings, Identifier identifier, @NotNull Boolean isEnable) {
         super(material, attackDamage, attackSpeed, settings);
         if (isEnable) Registry.register(Registry.ITEM, identifier, this.asItem());
     }

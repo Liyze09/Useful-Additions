@@ -8,9 +8,9 @@ import net.minecraft.util.Identifier;
 import static net.liyze.usefuladditions.UsefulAdditions.*;
 
 public abstract class Items {
-    public static final ToolItem COPPER_PICKAXE = new UPickaxeBuilder(CopperToolMaterial.INSTANCE, 0, -2.8F, new FabricItemSettings().group(ITEM_GROUP), new Identifier(ID, "copper_pickaxe"), cfg.enableCopperTools);
-    public static final ToolItem COPPER_SWORD = new USwordBuilder(CopperToolMaterial.INSTANCE, 3, -2.6F, new FabricItemSettings().group(ITEM_GROUP), new Identifier(ID, "copper_sword"), cfg.enableCopperTools);
-    public static final ToolItem COPPER_AXE = new UAxeBuilder(CopperToolMaterial.INSTANCE, 5, -3.2F, new FabricItemSettings().group(ITEM_GROUP), new Identifier(ID, "copper_axe"), cfg.enableCopperTools);
-    public static final ToolItem COPPER_SHOVEL = new UHoeBuilder(CopperToolMaterial.INSTANCE, 1, -3, new FabricItemSettings().group(ITEM_GROUP), new Identifier(ID, "copper_hoe"), cfg.enableCopperTools);
-    public static final ToolItem COPPER_HOE = new UShovelBuilder(CopperToolMaterial.INSTANCE, -3, -1.5F, new FabricItemSettings().group(ITEM_GROUP), new Identifier(ID, "copper_shovel"), cfg.enableCopperTools);
+    public static final ToolItem COPPER_PICKAXE = new UPickaxeBuilder(CopperToolMaterial.INSTANCE, 4, -2.8F, new FabricItemSettings().group(ITEM_GROUP), new Identifier(ID, "copper_pickaxe"), cfg.enableCopperTools);
+    public static final ToolItem COPPER_SWORD = new USwordBuilder(CopperToolMaterial.INSTANCE, 7, -2.6F, new FabricItemSettings().group(ITEM_GROUP), new Identifier(ID, "copper_sword"), cfg.enableCopperTools);
+    public static final ToolItem COPPER_AXE = new UAxeBuilder(CopperToolMaterial.INSTANCE, 9, -3.2F, new FabricItemSettings().group(ITEM_GROUP), new Identifier(ID, "copper_axe"), cfg.enableCopperTools);
+    public static final ToolItem COPPER_SHOVEL = new UShovelBuilder(CopperToolMaterial.INSTANCE, 5, -3, new FabricItemSettings().group(ITEM_GROUP), new Identifier(ID, "copper_shovel"), cfg.enableCopperTools);
+    public static final ToolItem COPPER_HOE = new UHoeBuilder(CopperToolMaterial.INSTANCE, 1, -1.5F, new FabricItemSettings().group(ITEM_GROUP), new Identifier(ID, "copper_hoe"), cfg.enableCopperTools);
 }

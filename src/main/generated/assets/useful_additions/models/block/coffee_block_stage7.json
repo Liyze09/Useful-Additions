@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "useful_additions:block/coffee_block_stage7"
+  }
+}
