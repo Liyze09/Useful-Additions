@@ -1,10 +1,9 @@
 package net.liyze.mod.usefuladditions;
 
 import me.shedaniel.autoconfig.AutoConfig;
-import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
+import me.shedaniel.autoconfig.serializer.YamlConfigSerializer;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
-import net.fabricmc.loader.api.FabricLoader;
 import net.liyze.mod.usefuladditions.configuration.ConfigBean;
 import net.liyze.mod.usefuladditions.resource.BRRP;
 import net.minecraft.item.ItemGroup;
@@ -30,8 +29,7 @@ public class UsefulAdditions implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        System.out.println(FabricLoader.getInstance().getGameDir().toFile().toURI() + "resourcepacks");
-        AutoConfig.register(ConfigBean.class, GsonConfigSerializer::new);
+        AutoConfig.register(ConfigBean.class, YamlConfigSerializer::new);
         cfg = AutoConfig.getConfigHolder(ConfigBean.class).getConfig();
         BRRP.registerRRP();
         registerFeatures();

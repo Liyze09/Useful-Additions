@@ -15,6 +15,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
 
+import static net.liyze.mod.usefuladditions.UsefulAdditions.LOGGER;
+
 @Mixin(FileResourcePackProvider.class)
 public class FileResourcePackProviderMixin {
     @SuppressWarnings("MismatchedQueryAndUpdateOfCollection")
@@ -32,5 +34,6 @@ public class FileResourcePackProviderMixin {
                     RuntimeResourcePack.RUNTIME
             ));
         }
+        LOGGER.info("UAPI RRPs register - Done");
     }
 }

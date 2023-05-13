@@ -11,6 +11,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.nio.charset.StandardCharsets;
 
+@SuppressWarnings("unused")
 public class ULang {
     JsonObject json = new JsonObject();
 

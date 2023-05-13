@@ -34,7 +34,7 @@ public class RRP implements ResourcePack {
 
     @Override
     public InputStream open(ResourceType type, Identifier id) {
-        Supplier<byte[]> supplier = this.getSys(type).get(id);
+        Supplier<byte[]> supplier = this.getSideMap(type).get(id);
         if (supplier == null) {
             return null;
         }
@@ -48,13 +48,13 @@ public class RRP implements ResourcePack {
 
     @Override
     public boolean contains(ResourceType type, Identifier id) {
-        return false;
+        return this.getSideMap(type).containsKey(id);
     }
 
     @Override
     public Set<String> getNamespaces(ResourceType type) {
         Set<String> namespaces = new HashSet<>();
-        for (Identifier identifier : this.getSys(type).keySet()) {
+        for (Identifier identifier : this.getSideMap(type).keySet()) {
             namespaces.add(identifier.getNamespace());
         }
         return namespaces;
@@ -78,12 +78,17 @@ public class RRP implements ResourcePack {
     public void close() {
     }
 
-    public byte[] addResource(ResourceType type, Identifier path, byte[] data) {
-        this.getSys(type).put(path, () -> data);
+    public byte[] addAsset(Identifier path, byte[] data) {
+        this.assets.put(path, () -> data);
         return data;
     }
 
-    private Map<Identifier, Supplier<byte[]>> getSys(ResourceType side) {
+    public byte[] addData(Identifier path, byte[] data) {
+        this.data.put(path, () -> data);
+        return data;
+    }
+
+    private Map<Identifier, Supplier<byte[]>> getSideMap(ResourceType side) {
         return side == ResourceType.CLIENT_RESOURCES ? this.assets : this.data;
     }
 }

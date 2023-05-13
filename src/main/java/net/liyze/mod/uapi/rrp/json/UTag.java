@@ -8,6 +8,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.nio.charset.StandardCharsets;
 
+@SuppressWarnings("unused")
 public class UTag {
     JsonObject json = new JsonObject();
     JsonArray included = new JsonArray();

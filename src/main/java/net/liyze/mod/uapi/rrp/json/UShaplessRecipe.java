@@ -8,6 +8,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.nio.charset.StandardCharsets;
 
+@SuppressWarnings("unused")
 public class UShaplessRecipe {
     JsonObject json = new JsonObject();
     JsonArray ingredients = new JsonArray(9);

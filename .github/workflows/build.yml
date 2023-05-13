@@ -1,5 +1,5 @@
 name: build
-on: [pull_request, push]
+on: [ pull_request, push ]
 
 permissions:
   contents: write
@@ -22,18 +22,16 @@ jobs:
           distribution: "temurin"
           java-version: 17
 
-      - name: get cache
+      - name: restore cache
         uses: actions/cache@v3
         with:
           path: ~/.gradle/caches
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
-      - name: clean Cache
-        # Remove some files from the Gradle cache, so they aren't cached by GitHub Actions.
-        # Restoring these files from a GitHub Actions cache might cause problems for future builds.
+      - name: clean cache
         run: |
           rm -f ~/.gradle/caches/modules-2/modules-2.lock
           rm -f ~/.gradle/caches/modules-2/gc.properties
-      - name: setup cache
+      - name: restore wrapper cache
         uses: actions/cache@v3
         with:
           path: ~/.gradle/wrapper
