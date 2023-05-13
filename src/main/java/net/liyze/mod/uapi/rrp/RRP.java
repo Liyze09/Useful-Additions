@@ -15,7 +15,7 @@ import java.util.function.Predicate;
 import java.util.function.Supplier;
 
 public class RRP implements ResourcePack {
-    public static List<RRP> rrps = new ArrayList<>();
+    public static List<ResourcePack> rrps;
     public final int packVersion;
     public final Identifier identifier;
     private final Map<Identifier, Supplier<byte[]>> data = new ConcurrentHashMap<>();
