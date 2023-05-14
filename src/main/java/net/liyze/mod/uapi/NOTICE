@@ -1,6 +1,0 @@
-/ rrp / RRPCallback
-/ rrp / SidedRRPCallback
-/ rrp / ForwardingEvent
-/ mixin / FileResourcePackProviderMixin
-Copied from SolidBlock-cn/BRRP under MPL-2.0 license
-Changes: Deleted event except BEFORE_USER

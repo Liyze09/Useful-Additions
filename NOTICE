@@ -1,0 +1,6 @@
+net.liyze.mod.uapi.rrp.RRPCallback
+net.liyze.mod.uapi.rrp.SidedRRPCallback
+net.liyze.mod.uapi.rrp.ForwardingEvent
+net.liyze.mod.uapi.mixin.FileResourcePackProviderMixin
+are copied from SolidBlock-cn/BRRP under MPL-2.0 license
+Changes: Deleted event except BEFORE_USER
