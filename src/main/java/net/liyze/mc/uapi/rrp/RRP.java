@@ -14,6 +14,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
+@SuppressWarnings("unused")
 public class RRP implements ResourcePack {
     public static List<ResourcePack> rrps;
     public final int packVersion;
@@ -24,6 +25,12 @@ public class RRP implements ResourcePack {
     public RRP(int packVersion, Identifier identifier) {
         this.packVersion = packVersion;
         this.identifier = identifier;
+    }
+
+    public static RRP create(int packVersion, Identifier identifier) {
+        RRP rrp = new RRP(packVersion, identifier);
+        rrps.add(rrp);
+        return rrp;
     }
 
     @Nullable
@@ -78,14 +85,12 @@ public class RRP implements ResourcePack {
     public void close() {
     }
 
-    public byte[] addAsset(Identifier path, byte[] data) {
+    public void addAsset(Identifier path, byte[] data) {
         this.assets.put(path, () -> data);
-        return data;
     }
 
-    public byte[] addData(Identifier path, byte[] data) {
+    public void addData(Identifier path, byte[] data) {
         this.data.put(path, () -> data);
-        return data;
     }
 
     private Map<Identifier, Supplier<byte[]>> getSideMap(ResourceType side) {

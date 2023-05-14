@@ -34,6 +34,6 @@ public class FileResourcePackProviderMixin {
                     RuntimeResourcePack.RUNTIME
             ));
         }
-        LOGGER.info("UAPI RRPs register - Done");
+        LOGGER.info("UAPI RRPs registerd");
     }
 }
