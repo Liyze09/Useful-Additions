@@ -11,12 +11,17 @@ import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 @SuppressWarnings("unused")
-public class UShapedRecipe implements UJson {
+public class UShapedRecipe extends URecipe {
     JsonArray pattern = new JsonArray(3);
     JsonObject keys = new JsonObject();
     JsonObject result = new JsonObject();
+    String type = "crafting_shaped";
 
+    @Override
     public byte[] build() {
+        json.addProperty("type", type);
+        json.addProperty("group", group);
+        json.add("pattern", pattern);
         json.add("key", keys);
         return json.toString().getBytes(StandardCharsets.UTF_8);
     }

@@ -11,13 +11,16 @@ import org.jetbrains.annotations.NotNull;
 import java.nio.charset.StandardCharsets;
 
 @SuppressWarnings("unused")
-public class UShaplessRecipe implements UJson {
+public class UShaplessRecipe extends URecipe {
     JsonArray ingredients = new JsonArray();
     JsonArray optional_ingredients = new JsonArray();
     JsonObject result = new JsonObject();
+    String type = "crafting_shapless";
 
     @Override
     public byte[] build() {
+        json.addProperty("type", type);
+        json.addProperty("group", group);
         ingredients.add(optional_ingredients);
         json.add("ingredients", ingredients);
         json.add("result", result);

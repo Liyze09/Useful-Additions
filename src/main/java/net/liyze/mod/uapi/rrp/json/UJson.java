@@ -4,6 +4,7 @@ import com.google.gson.JsonObject;
 
 import java.nio.charset.StandardCharsets;
 
+@SuppressWarnings("unused")
 public interface UJson {
     JsonObject json = new JsonObject();
 
