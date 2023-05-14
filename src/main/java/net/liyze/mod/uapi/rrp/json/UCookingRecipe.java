@@ -11,11 +11,13 @@ import org.jetbrains.annotations.NotNull;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 
+@SuppressWarnings("unused")
 public abstract class UCookingRecipe extends URecipe {
     float exp = 0.5F;
 
     @Override
     public byte[] build() {
+        json.addProperty("type", type);
         json.addProperty("experience", exp);
         json.addProperty("group", group);
         return json.toString().getBytes(StandardCharsets.UTF_8);
