@@ -12,9 +12,10 @@ import org.jetbrains.annotations.NotNull;
 import java.nio.charset.StandardCharsets;
 
 @SuppressWarnings("unused")
-public class ULang {
+public class ULang implements UJson {
     JsonObject json = new JsonObject();
 
+    @Override
     public byte[] build() {
         return json.toString().getBytes(StandardCharsets.UTF_8);
     }

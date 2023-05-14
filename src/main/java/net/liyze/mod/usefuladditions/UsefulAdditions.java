@@ -1,7 +1,7 @@
 package net.liyze.mod.usefuladditions;
 
 import me.shedaniel.autoconfig.AutoConfig;
-import me.shedaniel.autoconfig.serializer.YamlConfigSerializer;
+import me.shedaniel.autoconfig.serializer.Toml4jConfigSerializer;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.liyze.mod.usefuladditions.configuration.ConfigBean;
@@ -16,11 +16,12 @@ import pers.solid.brrp.v1.api.RuntimeResourcePack;
 import java.util.Random;
 
 import static net.liyze.mod.usefuladditions.misc.WorldgenRegister.registerFeatures;
+import static net.minecraft.item.Items.BUCKET;
 
 public class UsefulAdditions implements ModInitializer {
     public static final String ID = "useful_additions";
     public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(new Identifier(ID, "main"),
-            () -> new ItemStack(net.minecraft.item.Items.BUCKET));
+            () -> new ItemStack(BUCKET));
 
     public static final Logger LOGGER = LoggerFactory.getLogger("Useful Additions");
     public static final RuntimeResourcePack pack = RuntimeResourcePack.create(new Identifier(ID, "pack"));
@@ -29,7 +30,7 @@ public class UsefulAdditions implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        AutoConfig.register(ConfigBean.class, YamlConfigSerializer::new);
+        AutoConfig.register(ConfigBean.class, Toml4jConfigSerializer::new);
         cfg = AutoConfig.getConfigHolder(ConfigBean.class).getConfig();
         BRRP.registerRRP();
         registerFeatures();
