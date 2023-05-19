@@ -23,49 +23,58 @@ public abstract class UCookingRecipe extends URecipe {
         return json.toString().getBytes(StandardCharsets.UTF_8);
     }
 
-    public void addIngredient(@NotNull UB i) {
+    public UCookingRecipe addIngredient(@NotNull UB i) {
         JsonObject object = new JsonObject();
         object.addProperty("item", i.getNamespace());
         json.add("ingredient", object);
+        return this;
     }
 
-    public void addIngredient(Item item) {
+    public UCookingRecipe addIngredient(Item item) {
         JsonObject object = new JsonObject();
         object.addProperty("item", Registry.ITEM.getId(item).toString());
         json.add("ingredient", object);
+        return this;
     }
 
-    public void addIngredient(@NotNull Identifier id) {
+    public UCookingRecipe addIngredient(@NotNull Identifier id) {
         JsonObject object = new JsonObject();
         object.addProperty("item", id.toString());
         json.add("ingredient", object);
+        return this;
     }
 
-    public void addIngredient(List<Item> items) {
+    public UCookingRecipe addIngredient(List<Item> items) {
         JsonArray array = new JsonArray();
         for (Item i : items) {
             array.add(Registry.ITEM.getId(i).toString());
         }
         json.add("ingredient", array);
+        return this;
     }
 
-    public void addResult(UB i) {
+    public UCookingRecipe addResult(UB i) {
         json.addProperty("result", i.getNamespace());
+        return this;
     }
 
-    public void addResult(Item item) {
+    public UCookingRecipe addResult(Item item) {
         json.addProperty("result", Registry.ITEM.getId(item).toString());
+        return this;
     }
 
-    public void addResult(Identifier id) {
+    public UCookingRecipe addResult(Identifier id) {
         json.addProperty("result", id.toString());
+        return this;
     }
 
-    public void setExp(float exp) {
+    public UCookingRecipe setExp(float exp) {
         this.exp = exp;
+        return this;
     }
 
-    public void setTime(int time) {
+    public UCookingRecipe setTime(int time) {
         json.addProperty("cookingtime", time);
+        return this;
     }
 }

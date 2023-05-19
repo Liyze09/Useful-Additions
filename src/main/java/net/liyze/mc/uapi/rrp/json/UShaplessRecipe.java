@@ -28,79 +28,96 @@ public class UShaplessRecipe extends URecipe {
     }
 
     //Optional Ingredints
-    public void addOptionalIngredint(@NotNull UB i) {
+    public UShaplessRecipe addOptionalIngredint(@NotNull UB i) {
         optional_ingredients.add(i.getNamespace());
+        return this;
     }
 
-    public void addOptionalIngredint(@NotNull UB i, int count) {
+    public UShaplessRecipe addOptionalIngredint(@NotNull UB i, int count) {
         ats(count, optional_ingredients, i.getNamespace());
+        return this;
     }
 
-    public void addOptionalIngredint(@NotNull Identifier id) {
+    public UShaplessRecipe addOptionalIngredint(@NotNull Identifier id) {
         optional_ingredients.add(id.toString());
+        return this;
     }
 
-    public void addOptionalIngredint(@NotNull Identifier id, int count) {
+    public UShaplessRecipe addOptionalIngredint(@NotNull Identifier id, int count) {
         ats(count, optional_ingredients, id.toString());
+        return this;
     }
 
-    public void addOptionalIngredint(@NotNull Item item) {
+    public UShaplessRecipe addOptionalIngredint(@NotNull Item item) {
         optional_ingredients.add(Registry.ITEM.getId(item).toString());
+        return this;
     }
 
-    public void addOptionIngredint(@NotNull Item item, int count) {
+    public UShaplessRecipe addOptionIngredint(@NotNull Item item, int count) {
         ats(count, optional_ingredients, Registry.ITEM.getId(item).toString());
+        return this;
     }
 
     //Ingredints
-    public void addIngredint(@NotNull UB i) {
+    public UShaplessRecipe addIngredint(@NotNull UB i) {
         ingredients.add(i.getNamespace());
+        return this;
     }
 
-    public void addIngredint(@NotNull UB i, int count) {
+    public UShaplessRecipe addIngredint(@NotNull UB i, int count) {
         ats(count, ingredients, i.getNamespace());
+        return this;
     }
 
-    public void addIngredint(@NotNull Identifier id) {
+    public UShaplessRecipe addIngredint(@NotNull Identifier id) {
         ingredients.add(id.toString());
+        return this;
     }
 
-    public void addIngredint(@NotNull Identifier id, int count) {
+    public UShaplessRecipe addIngredint(@NotNull Identifier id, int count) {
         ats(count, ingredients, id.toString());
+        return this;
     }
 
-    public void addIngredint(@NotNull Item item) {
+    public UShaplessRecipe addIngredint(@NotNull Item item) {
         ingredients.add(Registry.ITEM.getId(item).toString());
+        return this;
     }
 
     //Result
-    public void addResult(@NotNull UB i, int count) {
+    public UShaplessRecipe addResult(@NotNull UB i, int count) {
         result.addProperty("item", i.getNamespace());
         result.addProperty("count", count);
+        return this;
     }
 
-    public void addResult(@NotNull UB i) {
+    public UShaplessRecipe addResult(@NotNull UB i) {
         result.addProperty("item", i.getNamespace());
         result.addProperty("count", 1);
+        return this;
     }
 
-    public void addResult(@NotNull Identifier id, int count) {
+    public UShaplessRecipe addResult(@NotNull Identifier id, int count) {
         result.addProperty("item", id.toString());
         result.addProperty("count", count);
+        return this;
     }
 
-    public void addResult(@NotNull Identifier id) {
+    public UShaplessRecipe addResult(@NotNull Identifier id) {
         result.addProperty("item", id.toString());
         result.addProperty("count", 1);
+        return this;
     }
 
-    public void addResult(@NotNull Item item) {
+    public UShaplessRecipe addResult(@NotNull Item item) {
         result.addProperty("item", Registry.ITEM.getId(item).toString());
+        return this;
     }
 
-    public void addResult(@NotNull Item item, int count) {
+    public UShaplessRecipe addResult(@NotNull Item item, int count) {
         result.addProperty("item", Registry.ITEM.getId(item).toString());
         result.addProperty("count", count);
+        return this;
     }
 
     private static void ats(int a, JsonArray b, String c) {

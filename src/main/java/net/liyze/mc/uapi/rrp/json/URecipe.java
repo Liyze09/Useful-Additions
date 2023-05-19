@@ -7,8 +7,9 @@ public abstract class URecipe implements UJson {
     String group;
     String type;
 
-    public void setGroup(String group) {
+    public URecipe setGroup(String group) {
         this.group = group;
+        return this;
     }
 
     @Override

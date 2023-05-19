@@ -20,31 +20,38 @@ public class ULang implements UJson {
         return json.toString().getBytes(StandardCharsets.UTF_8);
     }
 
-    public void add(String key, String value) {
+    public ULang add(String key, String value) {
         json.addProperty(key, value);
+        return this;
     }
 
-    public void add(@NotNull Item item, String name) {
+    public ULang add(@NotNull Item item, String name) {
         json.addProperty(item.getTranslationKey(), name);
+        return this;
     }
 
-    public void add(@NotNull Block block, String name) {
+    public ULang add(@NotNull Block block, String name) {
         json.addProperty(block.getTranslationKey(), name);
+        return this;
     }
 
-    public void add(@NotNull Enchantment enchantment, String name) {
+    public ULang add(@NotNull Enchantment enchantment, String name) {
         json.addProperty(enchantment.getTranslationKey(), name);
+        return this;
     }
 
-    public void add(@NotNull StatusEffect effect, String name) {
+    public ULang add(@NotNull StatusEffect effect, String name) {
         json.addProperty(effect.getTranslationKey(), name);
+        return this;
     }
 
-    public void add(@NotNull EntityType<?> entity, String name) {
+    public ULang add(@NotNull EntityType<?> entity, String name) {
         json.addProperty(entity.getTranslationKey(), name);
+        return this;
     }
 
-    public void add(@NotNull EntityAttribute entity, String name) {
+    public ULang add(@NotNull EntityAttribute entity, String name) {
         json.addProperty(entity.getTranslationKey(), name);
+        return this;
     }
 }

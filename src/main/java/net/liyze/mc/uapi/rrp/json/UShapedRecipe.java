@@ -6,6 +6,7 @@ import net.liyze.mc.uapi.ub.UB;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import org.jetbrains.annotations.NotNull;
 
 import java.nio.charset.StandardCharsets;
 import java.util.List;
@@ -26,62 +27,73 @@ public class UShapedRecipe extends URecipe {
         return json.toString().getBytes(StandardCharsets.UTF_8);
     }
 
-    public void setPattern(String line1, String line2, String line3) {
+    public UShapedRecipe setPattern(String line1, String line2, String line3) {
         pattern.add(line1);
         pattern.add(line2);
         pattern.add(line3);
         json.add("pattern", pattern);
+        return this;
     }
 
-    public void addKey(String key, UB i) {
+    public UShapedRecipe addKey(String key, @NotNull UB i) {
         JsonArray aKey = new JsonArray();
         aKey.add(i.getNamespace());
         keys.add("key", aKey);
+        return this;
     }
 
-    public void addKey(String key, Item i) {
+    public UShapedRecipe addKey(String key, Item i) {
         JsonArray aKey = new JsonArray();
         aKey.add(Registry.ITEM.getId(i).toString());
         keys.add("key", aKey);
+        return this;
     }
 
-    public void addKey(String key, List<Item> items) {
+    public UShapedRecipe addKey(String key, @NotNull List<Item> items) {
         JsonArray keys = new JsonArray();
         for (Item item : items) {
             keys.add(Registry.ITEM.getId(item).toString());
         }
+        return this;
     }
 
-    public void addKey(String key, Identifier i) {
+    public UShapedRecipe addKey(String key, @NotNull Identifier i) {
         JsonArray aKey = new JsonArray();
         aKey.add(i.toString());
         keys.add("key", aKey);
+        return this;
     }
 
-    public void addResult(Identifier item, int count) {
+    public UShapedRecipe addResult(@NotNull Identifier item, int count) {
         result.addProperty("item", item.toString());
         result.addProperty("count", count);
+        return this;
     }
 
-    public void addResult(UB i, int count) {
+    public UShapedRecipe addResult(@NotNull UB i, int count) {
         result.addProperty("item", i.getNamespace());
         result.addProperty("count", count);
+        return this;
     }
 
-    public void addResult(Item item, int count) {
+    public UShapedRecipe addResult(Item item, int count) {
         result.addProperty("item", Registry.ITEM.getId(item).toString());
         result.addProperty("count", count);
+        return this;
     }
 
-    public void addResult(Identifier item) {
+    public UShapedRecipe addResult(@NotNull Identifier item) {
         result.addProperty("item", item.toString());
+        return this;
     }
 
-    public void addResult(UB i) {
+    public UShapedRecipe addResult(@NotNull UB i) {
         result.addProperty("item", i.getNamespace());
+        return this;
     }
 
-    public void addResult(Item item) {
+    public UShapedRecipe addResult(Item item) {
         result.addProperty("item", Registry.ITEM.getId(item).toString());
+        return this;
     }
 }

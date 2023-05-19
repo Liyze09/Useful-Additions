@@ -11,12 +11,14 @@ public class ULootTable implements UJson {
     String type = "minecraft:generic";
     JsonArray pools = new JsonArray();
 
-    public void setType(String type) {
+    public ULootTable setType(String type) {
         this.type = type;
+        return this;
     }
 
-    public void addPool(Pool pool) {
+    public ULootTable addPool(Pool pool) {
         pools.add(pool.toJson());
+        return this;
     }
 
     @Override
@@ -37,15 +39,17 @@ class Pool {
         return this.pool;
     }
 
-    public void setRoll(int roll, float bonus_roll) {
+    public Pool setRoll(int roll, float bonus_roll) {
         this.roll = roll;
         this.bonus_roll = bonus_roll;
+        return this;
     }
 
-    public void addEntry(String type, Identifier name) {
+    public Pool addEntry(String type, Identifier name) {
         JsonObject object = new JsonObject();
         object.addProperty("type", type);
         object.addProperty("name", name.toString());
         this.entries.add(object);
+        return this;
     }
 }

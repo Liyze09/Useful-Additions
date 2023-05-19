@@ -14,11 +14,13 @@ public class UItemModel implements UJson {
         return json.toString().getBytes(StandardCharsets.UTF_8);
     }
 
-    public void addTexture(String path) {
+    public UItemModel addTexture(String path) {
         texture.addProperty("layer0", path);
+        return this;
     }
 
-    public void setParent(String parent) {
+    public UItemModel setParent(String parent) {
         this.parent = parent;
+        return this;
     }
 }
